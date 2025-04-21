@@ -1,0 +1,35 @@
+header,
+nav {
+    z-index: 100001 !important;
+}
+
+
+
+@media (max-width:800px) {
+    .goals {
+        flex-wrap: wrap;
+    }
+
+    .goals-area {
+        width: 100%;
+    }
+
+    .goals-area img {
+        width: 100%;
+    }
+
+    .vision-area {
+        padding-inline: 15px;
+    }
+
+    .profile-image {
+        width: 100%;
+        height: 450px;
+    }
+
+    .profile-image img {
+        width: 100%;
+        height: 100%;
+        
+    }
+}

@@ -1,0 +1,63 @@
+.banner .swiper {
+  width: 260px;
+  height: 320px;
+}
+.banner{
+  height: 210px;
+}
+
+.banner .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.banner .swiper-slide:nth-child(1n) {
+  background-image: url("src/assets/banner/banner1.jpg");
+  background-position:center;
+  background-size: cover;
+}
+
+.banner .swiper-slide:nth-child(2n) {
+  background-image: url("src/assets/banner/img2.jpg");
+  background-position:center;
+  background-size: cover;
+
+}
+
+.banner .swiper-slide:nth-child(3n) {
+  background-image: url("src/assets/banner3.jpg");
+  background-position:center;
+  background-size: cover;
+
+}
+.banner .swiper-slide:nth-child(5n) {
+  background-image: url("src/assets/card2.jpg");
+  background-position:center;
+  background-size: cover;
+
+}
+
+.banner .swiper-slide:nth-child(4n) {
+  background-image: url("src/assets/banner/img5.jpg");
+  background-position:center;
+  background-size: cover;
+}
+
+
+.banner .swiper-slide:nth-child(5n) {
+  background-image: url("src/assets/mg7.png");
+  background-position:center;
+  background-size: cover;
+
+}
+.banner .swiper-slide:nth-child(5n) {
+  background-image: url("src/assets/card2.jpg");
+  background-position:center;
+  background-size: cover;
+
+}
