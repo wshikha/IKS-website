@@ -1,32 +1,35 @@
 import React from "react";
 import BannerCard from "../home/BannerCard";
-
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 function Banner() {
+  const [typeEffect] = useTypewriter({
+    words: [""],
+    loop: {},
+    typeSpeed: 100,
+    deleteSpeed: 60,
+  });
   return (
-    <div className="flex items-center px-4 bg-gradient-to-l from-orange-300 via-slate-100 to-orange-100 lg:px-24">
-      <div className="flex flex-col items-center w-full gap-12 py-40 md:flex-row justify between">
+    <div className="flex items-center bg-gradient-to-l from-blue-300 via-blue-100 to-blue-200 lg:px-20">
+      <div className="flex flex-col items-center w-full gap-10 py-20 md:flex-row justify between">
         {/* left side */}
-        <div className="h-full space-y-8 md:w-3/2">
-          <h2 className="text-3xl leading-snug text-black">
-            ŚIKṢĀ: Study Centre for Indian Knowledge System for Holistic
-            Advancement
+        <div className="h-full space-y-5 md:w-3/2">
+          <h2 className="px-4 font-serif text-5xl font-semibold leading-snug text-center text-black">
+            ŚIKṢĀ:
+            <span className="px-2 font-semibold text-blue-700">
+              Study Centre for Indian Knowledge System <span>{typeEffect}</span>
+            </span>
           </h2>
-          <p className="leading-snug text-justify text-1xl ">
-            The vision of the Centre is to establish IITK at the forefront of
-            IKS studies in the world. IKS in Indian education system :
-            Possibilities and challengesThe Indian Knowledge System (IKS) is a
-            cell of the Ministry of Education (MoE) that promotes
-            interdisciplinary research on Indian knowledge systems. IKS is based
-            on the understanding of nature, existence, and humans. It aims to
-            preserve and disseminate IKS for societal applications and further
-            research.
+
+          <p className="px-4 font-serif text-xl leading-snug text-center ">
+            ŚIKṢĀ at IIT Kanpur is dedicated to exploring and revitalizing
+            India's rich heritage through the lens of traditional knowledge
+            systems. Our focus encompasses major themes such as Bhāratīya Bhāṣā
+            (Indian Languages), Gaṇita (Mathematics), Darśana (Philosophy), Nīti
+            (Ethics), Kalā (Art), and Āyurveda (Traditional Medicine).
           </p>
         </div>
 
         {/* right side */}
-        <div>
-          <BannerCard></BannerCard>
-        </div>
       </div>
     </div>
   );

@@ -16,8 +16,8 @@ const People = () => {
     <div>
       <div className="container px-5 py-24 mx-auto">
         <div className="container px-5 py-24 mx-auto">
-          <div className="mb-12 text-center">
-            <h1 className="p-2 text-2xl font-semibold bg-gradient-to-l from-orange-300 via-slate-100 to-orange-100 lg:px-24 md:text-4xl">
+          <div className="mb-12 font-serif text-center">
+            <h1 className="p-2 text-2xl font-semibold bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100 lg:px-24 md:text-4xl">
               Members of ŚIKṢĀ
             </h1>
           </div>
@@ -32,7 +32,7 @@ const People = () => {
                   />
                 </div>
                 <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-300">
+                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
                     {" "}
                     Computer Science and Engineering
                   </h2>
@@ -43,7 +43,7 @@ const People = () => {
                   <div className="flex flex-wrap items-center">
                     <a
                       href="#"
-                      className="inline-flex items-center text-indigo-300 md:mb-2 lg:mb-0"
+                      className="inline-flex items-center md:mb-2 lg:mb-0"
                     >
                       Computer Science and Engineering
                       <svg
@@ -102,7 +102,7 @@ const People = () => {
                   />
                 </div>
                 <div className="p-2 m-8 mt-1 transition duration-300 ease-in m-7 hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-300">
+                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
                     {" "}
                     Biological Sciences & Bioengineering
                   </h2>
@@ -172,7 +172,7 @@ const People = () => {
                   />
                 </div>
                 <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-300">
+                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
                     {" "}
                     Materials Science and Engineering
                   </h2>
@@ -192,7 +192,7 @@ const People = () => {
                   />
                 </div>
                 <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-300">
+                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
                     {" "}
                     Chemical Engineering
                   </h2>
@@ -212,7 +212,7 @@ const People = () => {
                   />
                 </div>
                 <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-300">
+                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
                     {" "}
                     Materials Science and Engineering
                   </h2>
@@ -232,7 +232,7 @@ const People = () => {
                   />
                 </div>
                 <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-300">
+                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
                     {" "}
                     Department of Aerospace Engineering
                   </h2>
@@ -250,7 +250,7 @@ const People = () => {
                   />
                 </div>
                 <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-300">
+                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
                     {" "}
                     Sustainable Energy Engineering
                   </h2>
@@ -270,7 +270,7 @@ const People = () => {
                   />
                 </div>
                 <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-300">
+                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
                     {" "}
                     Humanities and Social Sciences
                   </h2>
@@ -288,7 +288,7 @@ const People = () => {
                   className="object-cover object-center w-full pb-0 p-9 lg:h-72 md:h-48"
                 />
                 <div className="p-6 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-300">
+                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
                     {" "}
                     Civil Engineering
                   </h2>
@@ -306,7 +306,7 @@ const People = () => {
                   className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
                 />
                 <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-300">
+                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
                     {" "}
                     Mechanical Engineering
                   </h2>
@@ -324,7 +324,7 @@ const People = () => {
                   className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
                 />
                 <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-300">
+                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
                     {" "}
                     SPASE
                   </h2>

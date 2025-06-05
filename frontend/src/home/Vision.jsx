@@ -3,23 +3,19 @@ import vision from "../assets/vision.jpg";
 
 const Vision = () => {
   return (
-    <div className="py-5 mt-16 vision-area bg-gradient-to-l from-orange-300 via-slate-100 to-orange-100 lg:px-24">
+    <div className="py-5 mt-5 vision-area bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100 lg:px-24">
       <div className="flex flex-col items-center justify-between gap-12 md:flex-row">
-        <div className="md:w-1/2">
-          <h2 className="mb-6 text-2xl font-bold leading-snug underline">
-            Vision
-          </h2>
+        <div className="font-serif md:w-1/2">
+          <h2 className="mb-6 text-2xl font-bold leading-snug ">Vision</h2>
           <p className="text-justify ">
             The vision of the Centre is to establish IITK at the forefront of
-            IKS studies in the world.The long-term vision of the centre is to
-            establish IIT Kanpur at the forefront of IKS studies in the world.
-            In his speech, Prof. Karandikar mentioned that the centre's goal is
-            to start an academic program in IKS and create a significant impact
-            in the field. The centre will conduct research in various domains,
-            including Health & Wellness, Mathematics & Astronomy, Sanskrit &
-            Linguistic studies, Consciousness studies, Archaeo-metallurgy &
-            Materials, Darsanas, Acoustics & Music, and Water management
-            systems.
+            IKS studies in the world. In his speech, Prof. Karandikar mentioned
+            that the centre's goal is to start an academic program in IKS and
+            create a significant impact in the field. The centre will conduct
+            research in various domains, including Health & Wellness,
+            Mathematics & Astronomy, Sanskrit & Linguistic studies,
+            Consciousness studies, Archaeo-metallurgy & Materials, Darsanas,
+            Acoustics & Music, and Water management systems.
           </p>
         </div>
         <div className="px-4 py-8 mx-auto duration-300 border rounded-lg cursor-pointer shadow-7xl md:m-5 md:h-80">

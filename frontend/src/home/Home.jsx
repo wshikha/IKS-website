@@ -15,41 +15,25 @@ import Vision from "./Vision";
 import Section from "../components/Section";
 import Review from "./Review";
 import Event from "../components/Event";
+import Title from "../components/Title";
 const Home = () => {
   return (
     <div>
+      <Title />
       <Banner />
-      <div>
-        <Marquee pauseOnHover>
-          <div className="image_wrapper">
-            <img src={mg1} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={mg2} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={mg3} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={mg4} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={mg5} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={mg6} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={mg7} alt="" />
-          </div>
-          <div className="image_wrapper">
-            <img src={mg8} alt="" />
-          </div>
+      <div className="mt-8 text-white bg-blue-700 h-9">
+        <Marquee direction="left" width="100% ">
+          <h1 className="text-2xl font-bold">
+            Please contact a faculty member from the IKS Centre before applying
+            for Post-Doctoral Fellowship
+          </h1>
         </Marquee>
       </div>
       <Event />
-      <Section />
       <Vision />
+
+      <Section />
+
       <Review />
     </div>
   );

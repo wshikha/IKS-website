@@ -5,12 +5,12 @@ const Events = () => {
   return (
     <div>
       <div className="flex flex-col items-center px-10 my-20 lg:px-14">
-        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-orange-300 via-slate-100 to-orange-100 md:w-full">
+        <h2 className="my-10 font-serif text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100 md:w-full">
           Events & Activity
         </h2>
-        <div className="mt-8 bg-orange-400 h-9">
+        <div className="mt-8 text-white bg-blue-700 h-9">
           <Marquee direction="left" width="100% ">
-            <h1 className="text-2xl font-bold">
+            <h1 className="font-serif text-2xl font-bold">
               Upcoming Event: 22nd April, 10:00am - 1:00pm, RM101 at IIT Kanpur
               Inauguration of the Centre
             </h1>
@@ -19,11 +19,11 @@ const Events = () => {
         <div className="flex items-center px-4 lg:px-24 "></div>
         <div className="flex items-center justify-between gap-12 px-4 my-2 space-y-6 bg-white lg:px-24 fex-col md:flex-row "></div>
         <div className="md:w-4/2">
-          <p className="my-4 text-2xl font-semibold underline">
+          <p className="my-4 font-serif text-2xl font-semibold underline ">
             Sanskrit Teaching
           </p>
         </div>
-        <p className="text-justify">
+        <p className="font-serif text-lg text-justify">
           IIT Kanpur, in collaboration with Central Sanskrit University, offers
           a variety of engaging Sanskrit teaching activities designed to promote
           the understanding and appreciation of this ancient language. Among
@@ -42,12 +42,12 @@ const Events = () => {
           cultural heritage, making Sanskrit accessible to diverse audiences.
         </p>
         <div className="md:w-4/2">
-          <p className="mx-auto my-10 text-2xl font-semibold underline">
+          <p className="mx-auto my-10 font-serif text-2xl font-semibold underline">
             IKS Reading Club
           </p>
         </div>
 
-        <p className="text-justify">
+        <p className="font-serif text-lg text-justify">
           The IKS Reading Club at IIT Kanpur serves as a vibrant platform for
           exploring and discussing the vast corpus of Indian Knowledge Systems
           (IKS). This initiative encourages participants to engage with a
@@ -65,11 +65,11 @@ const Events = () => {
           System for Holistic Advancement at IIT Kanpur.
         </p>
         <div className="md:w-4/2">
-          <p className="my-10 text-2xl font-semibold underline">
+          <p className="my-10 font-serif text-2xl font-semibold underline">
             IKS Field Trips
           </p>
         </div>
-        <p className="text-justify">
+        <p className="font-serif text-lg text-justify">
           The IKS field trips organized by IIT Kanpur provide an enriching
           opportunity for participants to explore nearby heritage sites that are
           steeped in history and cultural significance. These excursions are

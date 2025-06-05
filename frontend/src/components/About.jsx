@@ -1,37 +1,54 @@
 import React from "react";
-import Favimg from "../assets/banner3.jpg";
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-l from-orange-300 via-slate-100 to-orange-100">
-      <div className="flex items-center px-4 lg:px-24 "></div>
-      <div className="flex items-center justify-between gap-12 px-4 my-16 space-y-6 bg-white lg:px-24 fex-col md:flex-row ">
-        <div className="space-y-6 md:w-1/2 ">
-          <img
-            src={Favimg}
-            alt=""
-            className="my-20 rounded md:w-10/15 size-30"
-          />
-        </div>
-        <div className="py-10 md:w-3/2">
-          <h2 className="my-2 text-4xl font-semibold leading-snug text-center text-black md:w-3/5">
-            Our Focus
-          </h2>
-          <p className="text-justify mb-15 md:w-5/6">
-            At ŚIKṢĀ, our activities center around the innovative application of
-            Science and Technology to facilitate Holistic Advancement. We draw
-            inspiration from the traditional and sustainable methods of ancient
-            India, adapting these practices to modern contexts in collaboration
-            with various stakeholders including technologists, scientists,
-            entrepreneurs, and professional researchers.
+    <div className="container px-5 py-24 mx-auto mt-12">
+      <div className="mb-12 font-serif text-center">
+        <h1 className="p-2 font-serif text-2xl font-semibold bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100 lg:px-24 md:text-4xl">
+          Our Goals
+        </h1>
+      </div>
+      <div className="bg-gradient-to-l from-blue-300 via-blue-100 to-blue-200">
+        <div className="flex items-center justify-between gap-16 px-2 my-10 space-y-6 bg-white lg:px-24 fex-col md:flex-row ">
+          <p className="pb-12 mb-10 font-serif text-lg text-justify ">
+            We are committed to achieving several key objectives:
+            <li>
+              Research: We aim to define the state of the art in traditional
+              Indian Knowledge System activities through the integration of
+              science and technology. This involves exploring new methodologies
+              and technologies that can enhance heritage conservation efforts.
+            </li>
+            <li>
+              Training: We focus on training human resources rooted in the
+              Indian Knowledge System. By equipping individuals with the
+              necessary skills and knowledge, we enhance their capacity to
+              contribute effectively to holistic advancement of our .
+            </li>
+            <li>
+              Content Development and Outreach: We strive to support researchers
+              by developing pedagogically relevant resource materials rooted in
+              the Indian tradition and primary references available in
+              Sanskrit.that enables researchers to create a perfect समन्वय
+              between science and technology and scale up their operations and
+              serve their customers more effectively. This includes creating
+              tools and resources that facilitate better engagement with
+              heritage assets.
+            </li>
+            Through these initiatives, ŚIKṢĀ seeks to create a sustainable
+            framework for the preservation and promotion of India's rich
+            Scientific, Philosophical, Cultural and Literary heritage, ensuring
+            that it continues to thrive for future generations.
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center mb-24 my-30 py-15 lg:px-14 bg-gradient-to-l from-orange-300 via-slate-100 to-orange-100 ">
-        <h2 className="text-4xl font-semibold leading-snug text-center text-black md:w-full">
+      <div className="mb-12 font-serif text-center">
+        <h2 className="py-2 font-serif font-semibold bg-white lg:px-14 md:text-4xl bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100">
           About ŚIKṢĀ: Centre for IKS
-        </h2>
-        <p className="px-4 py-10 text-justify mb-15 md:w-5/6">
+        </h2>{" "}
+      </div>
+
+      <div className="flex items-center justify-between gap-16 my-10 space-y-6 bg-white lg:px-24 fex-col md:flex-row ">
+        <p className="py-10 mb-20 font-serif text-lg text-justify ">
           ŚIKṢĀ: Study Centre for Indian Knowledge System for Holistic
           Advancement at IIT Kanpur is dedicated to exploring and revitalizing
           India's rich heritage through the lens of traditional knowledge

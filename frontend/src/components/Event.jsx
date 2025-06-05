@@ -5,12 +5,19 @@ const Event = () => {
   useEffect(() => {
     fetch("http://localhost:5000/allevents")
       .then((res) => res.json())
-      .then((data) => setEvents(data));
+      .then((data) => setEvents(data.slice(0, 12)));
   }, []);
 
   return (
-    <div>
-      <EventsCards events={events} headline="Events & Activities" />
+    <div className="p-10">
+      <div className="text-center mb-7">
+        <h1 className="p-1 text-2xl font-semibold bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100 lg:px-24 md:text-4xl">
+          Upcoming Events
+        </h1>
+      </div>
+      <div className="py-1">
+        <EventsCards events={events} />
+      </div>
     </div>
   );
 };

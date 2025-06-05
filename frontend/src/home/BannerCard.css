@@ -1,9 +1,10 @@
 .banner .swiper {
-  width: 260px;
-  height: 320px;
+  width: 240px;
+  height: 270px;
 }
 .banner{
-  height: 210px;
+ 
+  height: 180px;
 }
 
 .banner .swiper-slide {

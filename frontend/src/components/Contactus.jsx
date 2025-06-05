@@ -34,11 +34,11 @@ const Contactus = () => {
 
   return (
     <div className="contact ">
-      <div className="p-20 contact-col bg-gradient-to-l from-orange-300 via-slate-100 to-orange-100 lg:px-24 m-7">
+      <div className="p-20 contact-col bg-gradient-to-l from-blue-300 via-blue-100 to-blue-200 lg:px-24 m-7">
         <h3>
           Send us a message <img src={msg_icon} alt=" " />
         </h3>
-        <p>
+        <p className="text-black">
           Feel free to reach out through contact form or find our contact
           information below. Your feedback, questions, and suggestions are
           important below. Your feedback, questions, and suggestions are
@@ -47,17 +47,17 @@ const Contactus = () => {
         </p>
         <ul>
           <li>
-            <img src={mail_icon} alt="" />
-            shikha.shukla987@gmail.com
+            <img src={mail_icon} alt="" className="text-black" />
+            head_iks@iitk.ac.in
           </li>
           <li>
-            <img src={phone_icon} alt="" />
-            9838388106
+            <img src={phone_icon} alt="" className="text-black" />
+            +915126797650
           </li>
           <li>
             {" "}
-            <img src={location_icon} alt="" />
-            IKS IIT Kanpur
+            <img src={location_icon} alt="" className="text-black" />
+            Indian Institute of Technology Kalyanpur Kanpur-208016 INDIA
           </li>
         </ul>
       </div>

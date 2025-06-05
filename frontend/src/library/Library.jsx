@@ -9,9 +9,9 @@ import Subject from "./Subject";
 
 const Library = () => {
   return (
-    <div>
+    <div className="font-serif">
       <LibraryBanner />
-      <div className="mt-8 bg-orange-400 h-9">
+      <div className="mt-8 text-white bg-blue-700 h-9">
         <Marquee direction="left" width="100% ">
           <h1 className="text-2xl font-bold">
             Please contact a faculty member from the IKS Centre before applying

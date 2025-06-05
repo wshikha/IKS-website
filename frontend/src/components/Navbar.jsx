@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
 
 // react icons
 import { FaBarsStaggered, FaBlog, FaXmark } from "react-icons/fa6";
+import { AuthContext } from "../context/AuthProvider";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+
+  const { user } = useContext(AuthContext);
 
   //toggle menu
   const toggleMenu = () => {
@@ -37,25 +40,22 @@ const Navbar = () => {
     { link: "Events", path: "/events" },
     { link: "Library", path: "/library" },
     { link: "Contact us", path: "/contactus" },
+    { link: "Gallery", path: "/gallery" },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full text-3xl font-bold transition-all duration-200 ease-in bg-transparent ">
+    <header className="fixed top-0 left-0 right-0 w-full text-4xl font-bold transition-all duration-200 ease-in bg-transparent ">
       <nav
         className={`py-1 lg:px-14 px-4 ${
-          isSticky ? "sticky top-0 left-0 right-0 bg-orange-400" : ""
+          isSticky ? "sticky top-0 left-0 right-0 bg-blue-300" : ""
         }`}
       >
-        <div className="flex items-center justify-between gap-8 text-base">
+        <div className="flex items-center justify-between gap-8 p-4 text-base">
           {/*logo*/}
           <Link
             to="/"
-            className="flex items-center gap-4 text-3xl font-bold text-blue-700"
-          >
-            {" "}
-            <img src={logo} alt="" className="w-10" />
-            ŚIKṢĀ: Centre for IKS
-          </Link>
+            className="flex items-center gap-4 text-4xl font-bold text-blue-700 cursor-pointer"
+          ></Link>
 
           {/* nav item for large device*/}
           <ul className="hidden space-x-12 md:flex ">
@@ -63,7 +63,7 @@ const Navbar = () => {
               <Link
                 key={path}
                 to={path}
-                className="block text-base text-black cursor-pointer hover:text-blue-900"
+                className="block text-xl text-black cursor-pointer hover:text-blue-900"
               >
                 {link}
               </Link>

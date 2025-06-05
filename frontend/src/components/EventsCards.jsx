@@ -12,12 +12,12 @@ import { Link } from "react-router-dom";
 
 function EventsCards({ headline, events }) {
   return (
-    <div className="px-4 my-16 lg:px-24">
-      <h2 className="my-5 text-5xl font-bold text-center text-black">
+    <div className="px-4 my-16 font-serif lg:px-24">
+      <h2 className="my-5 text-4xl font-bold text-center text-black">
         {headline}
       </h2>
       {/* cards */}
-      <div>
+      <div className="mt-12">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -43,7 +43,7 @@ function EventsCards({ headline, events }) {
         >
           {events.map((events) => (
             <SwiperSlide key={events._id}>
-              <Link to="/events/${events.image">
+              <Link to={`/events/${events._id}`}>
                 <div>
                   <img src={events.image_url} alt="" />
                 </div>
