@@ -12,7 +12,7 @@ const Event = () => {
     <div className="p-10">
       <div className="text-center mb-7">
         <h1 className="p-1 text-2xl font-semibold bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100 lg:px-24 md:text-4xl">
-          Upcoming Events
+          Latest Events
         </h1>
       </div>
       <div className="py-1">
