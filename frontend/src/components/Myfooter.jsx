@@ -13,15 +13,14 @@ const Myfooter = () => {
   return (
     <div>
       <Footer className="font-bold text-white bg-neutral-800">
-        <div className="w-full px-4 lg:px-24">
-          <div className="grid w-full grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
+        <div className="w-full px-2 lg:px-24">
+          <div className="grid w-full grid-cols-2 gap-8 px-6 py-6 md:grid-cols-4">
             <div>
               <Footer.Title title="Company" />
               <Footer.LinkGroup col>
                 <Footer.Link href="/about">About</Footer.Link>
                 <Footer.Link href="/library">Library</Footer.Link>
                 <Footer.Link href="/people">People</Footer.Link>
-                <Footer.Link href="/project">Project</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
@@ -30,7 +29,6 @@ const Myfooter = () => {
                 <Footer.Link href="/events">Events</Footer.Link>
                 <Footer.Link href="#">Twitter</Footer.Link>
                 <Footer.Link href="#">Facebook</Footer.Link>
-                <Footer.Link href="/contactus">Contact Us</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
@@ -38,6 +36,7 @@ const Myfooter = () => {
               <Footer.LinkGroup col>
                 <Footer.Link href="/subject-list">Subject List</Footer.Link>
                 <Footer.Link href="#">Upcoming Events</Footer.Link>
+                <Footer.Link href="/contactus">Contact Us</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
@@ -50,11 +49,11 @@ const Myfooter = () => {
               </Link>
             </div>
           </div>
-          <div className="w-full px-4 py-6 bg-gray-700 sm:flex sm:items-center sm:justify-between">
+          <div className="w-full px-4 py-3 bg-gray-700 sm:flex sm:items-center sm:justify-between">
             <Footer.Link href="https://www.youtube.com/@iksiitk">
               youtube
             </Footer.Link>
-            <div className="flex mt-4 space-x-6 sm:mt-0 sm:justify-center">
+            <div className="flex mt-3 space-x-6 sm:mt-0 sm:justify-center">
               <Footer.Icon href="#" icon={BsFacebook} />
               <Footer.Icon href="#" icon={BsInstagram} />
               <Footer.Icon href="#" icon={BsTwitter} />
@@ -64,8 +63,8 @@ const Myfooter = () => {
               />
             </div>
             <div>
-              <Link to="/admin/dashboard/manage" className="block">
-                <button className="px-5 py-2 font-semibold text-white transition-all duration-300 bg-blue-700 rounded hover:bg-black">
+              <Link to="/login" className="block">
+                <button className="px-5 py-1 font-semibold text-white transition-all duration-300 bg-blue-700 rounded hover:bg-black">
                   Admin
                 </button>
               </Link>

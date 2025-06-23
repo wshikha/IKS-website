@@ -4,7 +4,7 @@ function SubjectList() {
   return (
     <div>
       <div className="flex flex-col items-center my-28 px-15 lg:px-14">
-        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100 md:w-full">
+        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-orange-200 via-orange-50 to-orange-100 to-blue-100 md:w-full">
           Topics You Can Explore
         </h2>
         <div className="flex items-center gap-2 ">

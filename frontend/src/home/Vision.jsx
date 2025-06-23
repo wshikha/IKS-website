@@ -3,10 +3,10 @@ import vision from "../assets/vision.jpg";
 
 const Vision = () => {
   return (
-    <div className="py-5 mt-5 vision-area bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100 lg:px-24">
+    <div className=" vision-area bg-gradient-to-l from-orange-200 via-orange-100 to-orange-50 lg:px-24">
       <div className="flex flex-col items-center justify-between gap-12 md:flex-row">
         <div className="font-serif md:w-1/2">
-          <h2 className="mb-6 text-2xl font-bold leading-snug ">Vision</h2>
+          <h2 className="mb-4 text-2xl font-bold leading-snug ">Vision</h2>
           <p className="text-justify ">
             The vision of the Centre is to establish IITK at the forefront of
             IKS studies in the world. In his speech, Prof. Karandikar mentioned

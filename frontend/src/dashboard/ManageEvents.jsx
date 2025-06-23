@@ -30,11 +30,13 @@ const ManageEvents = () => {
   };
 
   return (
-    <div className="px-4 my-12">
-      <h2 className="mb-8 text-3xl font-bold">ManageEvents</h2>
+    <div className="px-4 my-12 mt-18">
+      <h2 className="p-2 my-10 font-serif text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-orange-200 via-orange-50 to-orange-100 md:w-full">
+        ManageEvents
+      </h2>
 
       {/* table for event data */}
-      <Table className="lg:w-[1180px]">
+      <Table className="lg:w-[1480px]">
         <TableBody className="text-xl divide-y">
           <TableRow className="bg-white dark:border-gray-700 dark:bg-gray-800">
             <TableCell className="text-2xl font-bold text-black whitespace-nowrap dark:text-white">

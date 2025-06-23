@@ -5,11 +5,11 @@ const Events = () => {
   return (
     <div>
       <div className="flex flex-col items-center px-10 my-20 lg:px-14">
-        <h2 className="my-10 font-serif text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100 md:w-full">
+        <h2 className="my-10 font-serif text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-orange-200 via-orange-50 to-orange-100 md:w-full">
           Events & Activity
         </h2>
-        <div className="mt-8 text-white bg-blue-700 h-9">
-          <Marquee direction="left" width="100% ">
+        <div className="mt-8 text-white bg-orange-700 h-9">
+          <Marquee direction="left" width="100% bg-orange-700">
             <h1 className="font-serif text-2xl font-bold">
               Upcoming Event: 22nd April, 10:00am - 1:00pm, RM101 at IIT Kanpur
               Inauguration of the Centre

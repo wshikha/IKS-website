@@ -9,7 +9,7 @@ const Project = () => {
   return (
     <div>
       <div className="flex flex-col items-center px-10 my-20 font-serif lg:px-14 ">
-        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100 md:w-full">
+        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-orange-300 via-orange-50 to-orange-200 md:w-full">
           Ongoing Projects
         </h2>
 
@@ -51,13 +51,13 @@ const Project = () => {
         </p>
       </div>
       <div className="flex flex-col items-center px-10 lg:px-14">
-        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100 md:w-full">
+        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-orange-300 via-orange-50 to-orange-200 md:w-full">
           Research Areas
         </h2>
       </div>
 
       <div className="flex items-center justify-between gap-12 px-4 space-y-6 bg-white lg:px-24 fex-col md:flex-row">
-        <div className=" md:w-1/2">
+        <div className="object-cover object-center overflow-hidden md:w-1/2">
           <img
             src={Picture1}
             alt=""
@@ -167,8 +167,8 @@ const Project = () => {
         </div>
       </div>
 
-      <div className="md:w-4/2 ">
-        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100 md:w-full">
+      <div className="flex flex-col items-center px-10 lg:px-14 ">
+        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-orange-300 via-orange-50 to-orange-200 md:w-full">
           Automated Question-Answering for Valmiki Ramayana
         </h2>
         <p className="font-serif text-lg text-justify mb-28 px-28">

@@ -44,21 +44,21 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full text-4xl font-bold transition-all duration-200 ease-in bg-transparent ">
+    <header className="fixed top-0 right-0 w-full text-3xl font-bold transition-all duration-200 ease-in bg-transparent ">
       <nav
         className={`py-1 lg:px-14 px-4 ${
-          isSticky ? "sticky top-0 left-0 right-0 bg-blue-300" : ""
+          isSticky ? "sticky top-0 left-0 right-0 bg-orange-200" : ""
         }`}
       >
         <div className="flex items-center justify-between gap-8 p-4 text-base">
           {/*logo*/}
           <Link
             to="/"
-            className="flex items-center gap-4 text-4xl font-bold text-blue-700 cursor-pointer"
+            className="flex items-center gap-4 text-3xl font-bold text-blue-700 cursor-pointer"
           ></Link>
 
           {/* nav item for large device*/}
-          <ul className="hidden space-x-12 md:flex ">
+          <ul className="hidden ml-32 space-x-12 md:flex">
             {navItems.map(({ link, path }) => (
               <Link
                 key={path}

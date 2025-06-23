@@ -11,7 +11,7 @@ const Library = () => {
   return (
     <div className="font-serif">
       <LibraryBanner />
-      <div className="mt-8 text-white bg-blue-700 h-9">
+      <div className="mt-8 text-white bg-orange-700 h-9">
         <Marquee direction="left" width="100% ">
           <h1 className="text-2xl font-bold">
             Please contact a faculty member from the IKS Centre before applying

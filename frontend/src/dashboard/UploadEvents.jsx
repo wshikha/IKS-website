@@ -34,6 +34,7 @@ function UploadEvents() {
       .then((data) => {
         // console.log(data);
         alert("Event uploaded successfully !!!");
+        form.reset();
       });
   };
   return (

@@ -4,11 +4,11 @@ const About = () => {
   return (
     <div className="container px-5 py-24 mx-auto mt-12">
       <div className="mb-12 font-serif text-center">
-        <h1 className="p-2 font-serif text-2xl font-semibold bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100 lg:px-24 md:text-4xl">
+        <h1 className="p-2 font-serif text-2xl font-semibold bg-gradient-to-l from-orange-300 via-orange-50 to-orange-200 lg:px-24 md:text-4xl">
           Our Goals
         </h1>
       </div>
-      <div className="bg-gradient-to-l from-blue-300 via-blue-100 to-blue-200">
+      <div className="bg-gradient-to-l from-orange-300 via-orange-50 to-orange-200">
         <div className="flex items-center justify-between gap-16 px-2 my-10 space-y-6 bg-white lg:px-24 fex-col md:flex-row ">
           <p className="pb-12 mb-10 font-serif text-lg text-justify ">
             We are committed to achieving several key objectives:
@@ -42,7 +42,7 @@ const About = () => {
         </div>
       </div>
       <div className="mb-12 font-serif text-center">
-        <h2 className="py-2 font-serif font-semibold bg-white lg:px-14 md:text-4xl bg-gradient-to-l from-blue-300 via-slate-100 to-blue-100">
+        <h2 className="py-2 font-serif font-semibold bg-white lg:px-14 md:text-4xl bg-gradient-to-l from-orange-300 via-orange-50 to-orange-200">
           About ŚIKṢĀ: Centre for IKS
         </h2>{" "}
       </div>

@@ -13,7 +13,7 @@ import Dashboard from "../dashboard/Dashboard";
 import UploadEvents from "../dashboard/UploadEvents";
 import ManageEvents from "../dashboard/ManageEvents";
 import EditEvents from "../dashboard/EditEvents";
-import Signup from "../components/Signup";
+
 import Gallery from "../components/Gallery";
 import SubjectList from "../library/SubjectList";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
@@ -65,8 +65,7 @@ const router = createBrowserRouter([
       {
         path: "/events/:id",
         element: <SingleEvent />,
-        loader: ({ params }) =>
-          fetch(`http://localhost:5000/events/${params.id}`),
+        loader: ({ params }) => fetch("/events/${params.id}"),
       },
 
       {
@@ -96,17 +95,13 @@ const router = createBrowserRouter([
           {
             path: "/admin/dashboard/edit-events/:id",
             element: <EditEvents />,
-            loader: ({ params }) =>
-              fetch(`http://localhost:5000/events/${params.id}`),
+            loader: ({ params }) => fetch("/events/${params.id}"),
           },
         ],
       },
     ],
   },
-  {
-    path: "sign-up",
-    element: <Signup />,
-  },
+
   {
     path: "login",
     element: <Login />,

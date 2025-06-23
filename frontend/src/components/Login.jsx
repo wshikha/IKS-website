@@ -5,12 +5,12 @@ import { AuthContext } from "../context/AuthProvider";
 
 const Login = () => {
   const { login, loginwithGoogle } = useContext(AuthContext);
-  const [error, serError] = useState("");
+  const [error, setError] = useState("");
 
   const location = useLocation();
   const navigate = useNavigate();
 
-  const from = location.state?.form?.pathname || "/admin/dashboard";
+  const from = location.state?.form?.pathname || "/admin/dashboard/manage";
 
   const handleLogin = (event) => {
     event.preventDefault();

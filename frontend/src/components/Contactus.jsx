@@ -34,7 +34,7 @@ const Contactus = () => {
 
   return (
     <div className="contact ">
-      <div className="p-20 contact-col bg-gradient-to-l from-blue-300 via-blue-100 to-blue-200 lg:px-24 m-7">
+      <div className="p-20 contact-col bg-gradient-to-l from-orange-200 via-orange-50 to-orange-100 lg:px-24 m-7">
         <h3>
           Send us a message <img src={msg_icon} alt=" " />
         </h3>
@@ -46,19 +46,20 @@ const Contactus = () => {
           university community.
         </p>
         <ul>
-          <li>
+          <li className="text-black">
             <img src={mail_icon} alt="" className="text-black" />
             head_iks@iitk.ac.in
           </li>
-          <li>
+          <li className="text-black">
             <img src={phone_icon} alt="" className="text-black" />
             +915126797650
           </li>
-          <li>
+          <li className="text-black">
             {" "}
             <img src={location_icon} alt="" className="text-black" />
             Indian Institute of Technology Kalyanpur Kanpur-208016 INDIA
           </li>
+          "
         </ul>
       </div>
       <div className="m-20 contact-col ">

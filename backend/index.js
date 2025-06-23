@@ -1,7 +1,10 @@
 const express = require("express");
+
 const app = express();
-const port = process.env.PORT || 5000;
+const path = require("path");
+const PORT = process.env.PORT || 5000;
 const cors = require("cors");
+const _dirname = path.resolve();
 
 //moddlewares
 app.use(cors());
@@ -92,6 +95,11 @@ async function run() {
 }
 run().catch(console.dir);
 
-app.listen(port, () => {
+app.use(express.static(path.join(_dirname, "/frontend/dist")));
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(_dirname));
+});
+
+app.listen(PORT, () => {
   console.log("Example app listening on port ${port}");
 });
