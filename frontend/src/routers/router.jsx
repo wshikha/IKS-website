@@ -3,7 +3,7 @@ import App from "../App";
 import Home from "../home/Home";
 import Library from "../library/Library";
 import About from "../components/About";
-import Events from "../components/Events";
+import Activity from "../components/Activity";
 import People from "../components/People";
 import Project from "../components/Project";
 import Contactus from "../components/Contactus";
@@ -34,8 +34,8 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/events",
-        element: <Events />,
+        path: "/activity",
+        element: <Activity />,
       },
       {
         path: "/people",
@@ -65,7 +65,8 @@ const router = createBrowserRouter([
       {
         path: "/events/:id",
         element: <SingleEvent />,
-        loader: ({ params }) => fetch("/events/${params.id}"),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/events/${params.id}`),
       },
 
       {

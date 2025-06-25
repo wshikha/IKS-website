@@ -1,7 +1,7 @@
 import React from "react";
 import Favimg from "../assets/Picture1.png";
 import Marquee from "react-fast-marquee";
-const Events = () => {
+const Activity = () => {
   return (
     <div>
       <div className="flex flex-col items-center px-10 my-20 lg:px-14">
@@ -85,4 +85,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default Activity;

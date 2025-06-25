@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import EventsCards from "./EventsCards";
-const Event = () => {
+const EventDetail = () => {
   const [events, setEvents] = useState([]);
   useEffect(() => {
     fetch("http://localhost:5000/allevents")
@@ -22,4 +22,4 @@ const Event = () => {
   );
 };
 
-export default Event;
+export default EventDetail;

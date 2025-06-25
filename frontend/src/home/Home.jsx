@@ -14,8 +14,9 @@ import BannerCard from "./BannerCard";
 import Vision from "./Vision";
 import Section from "../components/Section";
 import Review from "./Review";
-import Event from "../components/Event";
+
 import Title from "../components/Title";
+import EventDetail from "../components/EventDetail";
 const Home = () => {
   return (
     <div>
@@ -29,7 +30,7 @@ const Home = () => {
           </h1>
         </Marquee>
       </div>
-      <Event />
+      <EventDetail />
       <Vision />
 
       <Section />

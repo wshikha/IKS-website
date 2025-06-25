@@ -12,11 +12,10 @@ import { Link } from "react-router-dom";
 const Myfooter = () => {
   return (
     <div>
-      <Footer className="font-bold text-white bg-neutral-800">
+      <Footer className="pt-5 font-bold text-white bg-neutral-800">
         <div className="w-full px-2 lg:px-24">
           <div className="grid w-full grid-cols-2 gap-8 px-6 py-6 md:grid-cols-4">
             <div>
-              <Footer.Title title="Company" />
               <Footer.LinkGroup col>
                 <Footer.Link href="/about">About</Footer.Link>
                 <Footer.Link href="/library">Library</Footer.Link>
@@ -24,7 +23,6 @@ const Myfooter = () => {
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="help center" />
               <Footer.LinkGroup col>
                 <Footer.Link href="/events">Events</Footer.Link>
                 <Footer.Link href="#">Twitter</Footer.Link>
@@ -32,7 +30,6 @@ const Myfooter = () => {
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="help center" />
               <Footer.LinkGroup col>
                 <Footer.Link href="/subject-list">Subject List</Footer.Link>
                 <Footer.Link href="#">Upcoming Events</Footer.Link>
@@ -64,7 +61,7 @@ const Myfooter = () => {
             </div>
             <div>
               <Link to="/login" className="block">
-                <button className="px-5 py-1 font-semibold text-white transition-all duration-300 bg-blue-700 rounded hover:bg-black">
+                <button className="px-5 py-2 font-semibold text-white transition-all duration-300 bg-blue-700 rounded hover:bg-black">
                   Admin
                 </button>
               </Link>

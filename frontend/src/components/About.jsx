@@ -11,7 +11,7 @@ const About = () => {
       <div className="bg-gradient-to-l from-orange-300 via-orange-50 to-orange-200">
         <div className="flex items-center justify-between gap-16 px-2 my-10 space-y-6 bg-white lg:px-24 fex-col md:flex-row ">
           <p className="pb-12 mb-10 font-serif text-lg text-justify ">
-            We are committed to achieving several key objectives:
+            We are committed to achieve several key objectives:
             <li>
               Research: We aim to define the state of the art in traditional
               Indian Knowledge System activities through the integration of
@@ -27,12 +27,11 @@ const About = () => {
             <li>
               Content Development and Outreach: We strive to support researchers
               by developing pedagogically relevant resource materials rooted in
-              the Indian tradition and primary references available in
-              Sanskrit.that enables researchers to create a perfect समन्वय
-              between science and technology and scale up their operations and
-              serve their customers more effectively. This includes creating
-              tools and resources that facilitate better engagement with
-              heritage assets.
+              the Indian tradition and primary references available in Sanskrit
+              that enables researchers to create a perfect समन्वय between
+              science and technology and scale up their operations and serve
+              their customers more effectively. This includes creating tools and
+              resources that facilitate better engagement with heritage assets.
             </li>
             Through these initiatives, ŚIKṢĀ seeks to create a sustainable
             framework for the preservation and promotion of India's rich
@@ -50,7 +49,7 @@ const About = () => {
       <div className="flex items-center justify-between gap-16 my-10 space-y-6 bg-white lg:px-24 fex-col md:flex-row ">
         <p className="py-10 mb-20 font-serif text-lg text-justify ">
           ŚIKṢĀ: Study Centre for Indian Knowledge System for Holistic
-          Advancement at IIT Kanpur is dedicated to exploring and revitalizing
+          Advancement at IIT Kanpur is dedicated to explore and revitalize
           India's rich heritage through the lens of traditional knowledge
           systems. Our focus encompasses major themes such as Bhāratīya Bhāṣā
           (Indian Languages), Gaṇita (Mathematics), Darśana (Philosophy), Nīti

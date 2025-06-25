@@ -13,9 +13,6 @@ import { Link } from "react-router-dom";
 function EventsCards({ headline, events }) {
   return (
     <div className="px-4 font-serif my-14 lg:px-20">
-      <h2 className="my-5 text-4xl font-bold text-center text-black">
-        {headline}
-      </h2>
       {/* cards */}
       <div className="mt-12">
         <Swiper
@@ -39,7 +36,7 @@ function EventsCards({ headline, events }) {
             },
           }}
           modules={[Pagination]}
-          className="w-full h-full mySwiper"
+          className="w-full h-80 mySwiper"
         >
           {events.map((events) => (
             <SwiperSlide key={events._id}>
