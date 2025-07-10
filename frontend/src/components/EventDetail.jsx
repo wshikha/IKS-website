@@ -9,13 +9,16 @@ const EventDetail = () => {
   }, []);
 
   return (
-    <div className="p-10">
+    <div data-aos="fade-up" className="p-10">
       <div className="mb-3 text-center">
-        <h1 className="p-1 text-2xl font-semibold bg-gradient-to-l from-orange-300 via-orange-50 to-orange-200 lg:px-24 md:text-4xl">
+        <h1
+          data-aos="fade-up"
+          className="p-1 text-2xl font-semibold text-white bg-gray-700 lg:px-24 md:text-4xl"
+        >
           Recent Events
         </h1>
       </div>
-      <div className="py-1">
+      <div data-aos="fade-up" className="py-1">
         <EventsCards events={events} />
       </div>
     </div>

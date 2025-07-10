@@ -1,5 +1,5 @@
 import React from "react";
-import logo2 from "../assets/logo2.jpg";
+import logo2 from "../assets/logo.jpg";
 import Favimg from "../assets/banner/banner1.jpg";
 import { Link } from "react-router-dom";
 
@@ -34,7 +34,10 @@ const PromoBanner = () => {
             <p className="text-base">PDF Downloads</p>
           </div>
         </div>
-        <Link to="/about" className="block mt-12">
+        <Link
+          to="http://172.20.170.71:8081/cgi-bin/koha/opac-search.pl?advsearch=1&weight_search=1&do=Search&limit=mc-itype%2Cphr%3ABK&sort_by=relevance"
+          className="block mt-12"
+        >
           <button className="px-5 py-2 font-semibold text-white transition-all duration-200 bg-blue-700 rounded hover:bg-black">
             Explore More
           </button>

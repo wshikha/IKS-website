@@ -17,7 +17,7 @@ const People = () => {
       <div className="container px-5 py-24 mx-auto">
         <div className="container px-5 py-24 mx-auto">
           <div className="mb-12 font-serif text-center">
-            <h1 className="p-2 text-2xl font-semibold bg-gradient-to-l from-orange-300 via-orange-50 to-orange-200 lg:px-24 md:text-4xl">
+            <h1 className="p-2 text-2xl font-semibold text-white bg-amber-600 lg:px-24 md:text-4xl">
               Members of ŚIKṢĀ
             </h1>
           </div>

@@ -34,7 +34,7 @@ const Contactus = () => {
 
   return (
     <div className="contact ">
-      <div className="p-20 contact-col bg-gradient-to-l from-orange-200 via-orange-50 to-orange-100 lg:px-24 m-7">
+      <div className="p-20 rounded-tr-xl rounded-b-xl contact-col bg-amber-600 lg:px-24 m-7 rounded-l-xl ">
         <h3>
           Send us a message <img src={msg_icon} alt=" " />
         </h3>

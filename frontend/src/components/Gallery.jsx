@@ -63,7 +63,7 @@ function Gallery() {
   return (
     <div>
       <div className="flex flex-col items-center px-10 my-20 font-serif lg:px-14 ">
-        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-orange-300 via-orange-50 to-orange-100 md:w-full">
+        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black text-white bg-amber-600 md:w-full">
           Images
         </h2>
       </div>

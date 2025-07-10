@@ -17,7 +17,7 @@ const Logout = () => {
       .catch((error) => {});
   };
   return (
-    <div className="flex items-center justify-center h-screen bg-gradient-to-l from-orange-300 via-slate-100 to-orange-100">
+    <div className="flex items-center justify-center h-screen bg-amber-600">
       <button
         className="px-8 py-2 text-white bg-red-700 rounded"
         onClick={handleLogout}

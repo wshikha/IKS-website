@@ -28,7 +28,7 @@ const Login = () => {
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        serError(errorMessage);
+        setError(errorMessage);
       });
   };
   //signup using google account
@@ -41,28 +41,28 @@ const Login = () => {
   };
   return (
     <div>
-      <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12 ">
-        <div class="relative py-10 px-10 pz-10 sm:rounded-3xl sm:max-w-xl sm:mx-auto bg-gradient-to-l from-orange-300 via-slate-100 to-orange-100">
-          <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
-            <div class="max-w-md mx-auto">
+      <div className="flex flex-col justify-center min-h-screen py-6 bg-gray-100 sm:py-12 ">
+        <div className="px-10 py-10 pz-10 sm:rounded-3xl sm:max-w-xl sm:mx-auto bg-amber-600">
+          <div className="px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+            <div className="max-w-md mx-auto">
               <div>
-                <h1 class="text-2xl font-semibold">Login Form</h1>
+                <h1 className="text-2xl font-semibold">Login Form</h1>
               </div>
-              <div class="divide-y divide-gray-200">
+              <div className="divide-y divide-gray-200">
                 <form
                   onSubmit={handleLogin}
-                  class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7"
+                  className="py-8 space-y-4 text-base leading-6 text-gray-700 sm:text-lg sm:leading-7"
                 >
-                  <div class="relative">
+                  <div>
                     <input
                       id="email"
                       name="email"
                       type="text"
-                      class="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600"
+                      className="w-full h-10 text-gray-900 border-b-2 border-gray-300 peer focus:outline-none focus:borer-rose-600"
                       placeholder="Email address"
                     />
                   </div>
-                  <div class="relative">
+                  <div>
                     <input
                       id="password"
                       name="password"
@@ -88,7 +88,7 @@ const Login = () => {
                     </Link>
                     Here
                   </p>
-                  <div class="relative">
+                  <div>
                     <button class="bg-blue-500 text-white rounded-md px-6 py-2">
                       Login
                     </button>

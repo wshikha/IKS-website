@@ -1,15 +1,18 @@
 import React from "react";
+
+import { Link } from "react-router-dom";
 import Picture1 from "../assets/projects/Picture1.png";
 import Picture2 from "../assets/projects/Picture2.png";
 import Picture3 from "../assets/projects/Picture3.png";
 import Picture4 from "../assets/projects/Picture4.png";
 import Picture5 from "../assets/projects/Picture5.png";
 import picture6 from "../assets/projects/picture6.jpg";
+
 const Project = () => {
   return (
     <div>
       <div className="flex flex-col items-center px-10 my-20 font-serif lg:px-14 ">
-        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-orange-300 via-orange-50 to-orange-200 md:w-full">
+        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-white bg-amber-600 md:w-full">
           Ongoing Projects
         </h2>
 
@@ -51,124 +54,55 @@ const Project = () => {
         </p>
       </div>
       <div className="flex flex-col items-center px-10 lg:px-14">
-        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-orange-300 via-orange-50 to-orange-200 md:w-full">
+        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-white bg-amber-600 md:w-full">
           Research Areas
         </h2>
       </div>
 
-      <div className="flex items-center justify-between gap-12 px-4 space-y-6 bg-white lg:px-24 fex-col md:flex-row">
-        <div className="object-cover object-center overflow-hidden md:w-1/2">
-          <img
-            src={Picture1}
-            alt=""
-            className="object-cover object-center w-full pb-0 my-8 rounded md:w-10/12 size-50 p-9 lg:h-72 md:h-48"
-          />
-        </div>
-        <div className="md:w-4/2">
-          <p className="my-2 font-serif text-2xl font-semibold">
+      <div className="items-center justify-between px-4 space-y-6 bg-white lg:px-24">
+        <ol>
+          <li>
+            <Link to="/project/ayurveda" className="block mt-12">
+              <p className="my-2 font-serif text-2xl font-semibold text-blue-800">
+                1. आयुर्विज्ञान (āyurvijñāna){" "}
+              </p>
+            </Link>
+          </li>
+          <li>
             {" "}
-            आयुर्विज्ञान (āyurvijñāna)
-          </p>
-          <p className="mb-20 font-serif text-lg text-justify md:w-5/6">
-            During the inauguration, the coordinator of the centre, Prof. Arnab
-            Bhattacharya, gave an introduction about the centre, mentioning that
-            the mission is to promote, facilitate, and benefit from IKS-related
-            studies, research, content development, and outreach. About 20
-            faculty members from more than 12 departments are part of the
-            centre.
-          </p>
-        </div>
-      </div>
+            <Link to="/project/kala" className="block mt-12">
+              <p className="my-2 font-serif text-2xl font-semibold text-blue-800">
+                2. कला (kalā)
+              </p>
+            </Link>
+          </li>
+          <li>
+            <Link to="/project/darsana" className="block mt-12">
+              <p className="my-2 font-serif text-2xl font-semibold text-blue-800">
+                3. दर्शन (Darśana)
+              </p>
+            </Link>
+          </li>
+          <li>
+            <Link to="/project/ganita" className="block mt-12">
+              <p className="my-2 font-serif text-2xl font-semibold text-blue-800">
+                4. गणित (gaṇita)
+              </p>
+            </Link>
+          </li>
 
-      <div className="flex items-center justify-between gap-12 px-4 space-y-6 bg-white lg:px-24 fex-col md:flex-row">
-        <div className=" md:w-1/2">
-          <img
-            src={Picture2}
-            alt=""
-            className="object-cover object-center w-full pb-0 my-8 rounded md:w-10/12 size-50 p-9 lg:h-72 md:h-48"
-          />
-        </div>
-        <div className="md:w-4/2">
-          <p className="my-2 font-serif text-2xl font-semibold"> कला (kalā)</p>
-          <p className="mb-20 font-serif text-lg text-justify md:w-5/6 ">
-            During the inauguration, the coordinator of the centre, Prof. Arnab
-            Bhattacharya, gave an introduction about the centre, mentioning that
-            the mission is to promote, facilitate, and benefit from IKS-related
-            studies, research, content development, and outreach. About 20
-            faculty members from more than 12 departments are part of the
-            centre.
-          </p>
-        </div>
-      </div>
-      <div className="flex items-center justify-between gap-12 px-4 space-y-6 bg-white lg:px-24 fex-col md:flex-row">
-        <div className=" md:w-1/2">
-          <img
-            src={Picture4}
-            alt=""
-            className="object-cover object-center w-full pb-0 my-8 rounded md:w-10/12 size-50 p-9 lg:h-72 md:h-48"
-          />
-        </div>
-        <div className="md:w-4/2">
-          <p className="my-2 font-serif text-2xl font-semibold">
-            {" "}
-            दर्शन (darśana)
-          </p>
-          <p className="mb-20 font-serif text-lg text-justify md:w-5/6 ">
-            During the inauguration, the coordinator of the centre, Prof. Arnab
-            Bhattacharya, gave an introduction about the centre, mentioning that
-            the mission is to promote, facilitate, and benefit from IKS-related
-            studies, research, content development, and outreach. About 20
-            faculty members from more than 12 departments are part of the
-            centre.
-          </p>
-        </div>
-      </div>
-      <div className="flex items-center justify-between gap-12 px-4 space-y-6 bg-white lg:px-24 fex-col md:flex-row">
-        <div className=" md:w-1/2">
-          <img
-            src={Picture3}
-            alt=""
-            className="object-cover object-center w-full pb-0 my-8 rounded md:w-10/12 size-50 p-9 lg:h-72 md:h-48"
-          />
-        </div>
-        <div className="md:w-4/2">
-          <p className="my-2 font-serif text-2xl font-semibold">
-            {" "}
-            गणित (gaṇita)
-          </p>
-          <p className="mb-20 font-serif text-lg text-justify md:w-5/6 ">
-            During the inauguration, the coordinator of the centre, Prof. Arnab
-            Bhattacharya, gave an introduction about the centre, mentioning that
-            the mission is to promote, facilitate, and benefit from IKS-related
-            studies, research, content development, and outreach. About 20
-            faculty members from more than 12 departments are part of the
-            centre.
-          </p>
-        </div>
-      </div>
-      <div className="flex items-center justify-between gap-12 px-4 space-y-6 bg-white lg:px-24 fex-col md:flex-row">
-        <div className=" md:w-1/2">
-          <img
-            src={Picture5}
-            alt=""
-            className="object-cover object-center w-full pb-0 my-8 rounded md:w-10/12 size-50 p-9 lg:h-72 md:h-48"
-          />
-        </div>
-        <div className="md:w-4/2">
-          <p className="my-2 font-serif text-2xl font-semibold"> नीति (nīti)</p>
-          <p className="mb-20 font-serif text-lg text-justify md:w-5/6 ">
-            During the inauguration, the coordinator of the centre, Prof. Arnab
-            Bhattacharya, gave an introduction about the centre, mentioning that
-            the mission is to promote, facilitate, and benefit from IKS-related
-            studies, research, content development, and outreach. About 20
-            faculty members from more than 12 departments are part of the
-            centre.
-          </p>
-        </div>
+          <li>
+            <Link to="/project/niti" className="block mt-12">
+              <p className="my-2 font-serif text-2xl font-semibold text-blue-800">
+                5. नीति (nīti)
+              </p>
+            </Link>
+          </li>
+        </ol>
       </div>
 
       <div className="flex flex-col items-center px-10 lg:px-14 ">
-        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-orange-300 via-orange-50 to-orange-200 md:w-full">
+        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-white bg-amber-600 md:w-full">
           Automated Question-Answering for Valmiki Ramayana
         </h2>
         <p className="font-serif text-lg text-justify mb-28 px-28">

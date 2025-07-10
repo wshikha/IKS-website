@@ -17,12 +17,13 @@ import Review from "./Review";
 
 import Title from "../components/Title";
 import EventDetail from "../components/EventDetail";
+import Newprojects from "./Newprojects";
 const Home = () => {
   return (
     <div>
       <Title />
       <Banner />
-      <div className="h-8 text-white bg-orange-400">
+      <div className="h-8 text-white bg-green-600">
         <Marquee direction="left" width="100% ">
           <h1 className="text-2xl font-bold">
             Please contact a faculty member from the IKS Centre before applying
@@ -30,6 +31,7 @@ const Home = () => {
           </h1>
         </Marquee>
       </div>
+      <Newprojects />
       <EventDetail />
       <Vision />
 

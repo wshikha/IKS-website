@@ -8,7 +8,7 @@ import location_icon from "../assets/location-icon.png";
 import SubjectList from "./SubjectList";
 const Subject = () => {
   return (
-    <div className="flex items-center bg-gradient-to-l from-orange-300 via-orange-50 to-orange-100 mb-14">
+    <div className="flex items-center bg-amber-600 mb-14">
       <div className="flex flex-col items-center w-full py-10 md:flex-row justify between">
         <div className="text-lg contact-col lg:px-32">
           <h3 className="text-xl font-bold color-black">

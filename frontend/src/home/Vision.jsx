@@ -3,11 +3,11 @@ import vision from "../assets/vision.jpg";
 
 const Vision = () => {
   return (
-    <div className=" vision-area bg-gradient-to-l from-orange-200 via-orange-100 to-orange-50 lg:px-24">
+    <div data-aos="fade-up" className="bg-amber-600 vision-area lg:px-24">
       <div className="flex flex-col items-center justify-between gap-12 md:flex-row">
         <div className="font-serif md:w-1/2">
-          <h2 className="mb-4 text-2xl font-bold leading-snug ">Vision</h2>
-          <p className="text-justify ">
+          <h2 className="mb-4 text-3xl font-bold leading-snug ">Vision</h2>
+          <p className="text-xl text-justify ">
             The vision of the Centre is to establish IITK at the forefront of
             IKS studies in the world. In his speech, Prof. Karandikar mentioned
             that the centre's goal is to start an academic program in IKS and
