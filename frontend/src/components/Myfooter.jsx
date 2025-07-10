@@ -51,8 +51,14 @@ const Myfooter = () => {
               youtube
             </Footer.Link>
             <div className="flex mt-3 space-x-6 sm:mt-0 sm:justify-center">
-              <Footer.Icon href="#" icon={BsFacebook} />
-              <Footer.Icon href="#" icon={BsInstagram} />
+              <Footer.Icon
+                href="https://www.facebook.com/profile.php?id=61576360602186"
+                icon={BsFacebook}
+              />
+              <Footer.Icon
+                href="https://www.instagram.com/iks3.5849/?next=%2F"
+                icon={BsInstagram}
+              />
               <Footer.Icon href="#" icon={BsTwitter} />
               <Footer.Icon
                 href="https://www.youtube.com/@iksiitk"

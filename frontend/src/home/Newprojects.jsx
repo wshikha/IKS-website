@@ -65,14 +65,14 @@ function Newprojects() {
           reasoning.
         </p>
       </div>
-      <div className="grid grid-cols-1 gap-2 pt-5 mb-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center">
+      <div className="grid grid-cols-1 gap-2 pt-5 mb-5 ml-5 mr-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center">
         {/* card section */}
         {NitiData.map((data) => (
           <div
             data-aos="fade-up"
             data-aos-delay={data.aosDelay}
             key={data.id}
-            className="mb-20 space-y-3"
+            className="mb-20 space-y-3 "
           >
             <img
               src={data.img}
