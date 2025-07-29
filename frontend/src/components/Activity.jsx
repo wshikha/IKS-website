@@ -11,8 +11,8 @@ const Activity = () => {
         <div className="mt-8 text-white bg-amber-700 h-9">
           <Marquee direction="left" width="100% bg-amber-600">
             <h1 className="font-serif text-2xl font-bold">
-              Upcoming Event: 22nd April, 10:00am - 1:00pm, RM101 at IIT Kanpur
-              Inauguration of the Centre
+              Upcoming Event: 11th August 2025, 06:15 pm - 8:15pm, RM101 at IIT
+              Kanpur Sanskrit Week Celebration
             </h1>
           </Marquee>
         </div>

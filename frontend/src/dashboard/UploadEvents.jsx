@@ -1,7 +1,25 @@
 import React from "react";
-import { Button, Checkbox, Label, TextInput, Textarea } from "flowbite-react";
+import { useState } from "react";
+import {
+  Button,
+  Checkbox,
+  Label,
+  TextInput,
+  Textarea,
+  FileInput,
+  HelperText,
+} from "flowbite-react";
 
 function UploadEvents() {
+  const typesofevents = [
+    "Seminar",
+    "Symposium",
+    "Conference",
+    "Workshop",
+    "Competition/quiz",
+  ];
+
+  const [selectedType, setSelectedType] = useState(typesofevents[0]);
   //handle event submission
   const handleEventSubmit = (event) => {
     event.preventDefault();
@@ -12,6 +30,11 @@ function UploadEvents() {
     const image_url = form.image_url.value;
     const description = form.description.value;
     const pdf_url = form.pdf_url.value;
+    const eventType = form.typesofevents.value;
+    const duration = form.duration.value;
+    const venue = form.venue.value;
+    const speaker_name = form.speaker_name.value;
+    const speaker_description = form.speaker_descriptions.value;
 
     const eventObj = {
       name,
@@ -19,6 +42,11 @@ function UploadEvents() {
       image_url,
       description,
       pdf_url,
+      typesofevents: eventType,
+      duration,
+      venue,
+      speaker_name,
+      speaker_description,
     };
 
     console.log(eventObj);
@@ -51,7 +79,8 @@ function UploadEvents() {
               <Label htmlFor="name">Name of Event</Label>
             </div>
             <TextInput
-              id="name"
+              id="event_name"
+              name="name"
               type="text"
               placeholder="name of event"
               required
@@ -60,11 +89,12 @@ function UploadEvents() {
           {/*date*/}
           <div className="lg:w-1/2">
             <div className="block mb-2">
-              <Label htmlFor="name">Date of Event</Label>
+              <Label htmlFor="date">Date of Event</Label>
             </div>
             <TextInput
               id="date"
               type="date"
+              name="date"
               placeholder="date of event"
               required
             />
@@ -74,10 +104,93 @@ function UploadEvents() {
         <div className="flex gap-8">
           <div className="lg:w-1/2">
             <div className="block mb-2">
-              <Label htmlFor="name">Image of Event</Label>
+              <Label htmlFor="venue">Venue of Event</Label>
+            </div>
+            <TextInput
+              id="venue"
+              name="venue"
+              type="text"
+              placeholder="venue of event"
+              required
+            />
+          </div>
+          {/*date*/}
+          <div className="lg:w-1/2">
+            <div className="block mb-2">
+              <Label htmlFor="time">Duration of event</Label>
+            </div>
+            <TextInput
+              id="time"
+              name="duration"
+              type="time"
+              placeholder="duration of event"
+              required
+            />
+          </div>
+        </div>
+
+        {/*third row*/}
+        <div className="flex gap-8">
+          <div className="lg:w-1/2">
+            <div className="block mb-2">
+              <Label htmlFor="speaker_name">Name of speaker</Label>
+            </div>
+            <TextInput
+              id="speaker_name"
+              name="speaker_name"
+              type="text"
+              placeholder="name of speaker"
+              required
+            />
+
+            <div>
+              <div className="block mb-2">
+                <Label htmlFor="description">
+                  {" "}
+                  Description About the Speaker
+                </Label>
+              </div>
+              <Textarea
+                id="speaker_description"
+                name="speaker_description"
+                placeholder="Write about speaker..."
+                required
+                className="w-full"
+                rows={4}
+              />
+            </div>
+          </div>
+          {/*typpes of events*/}
+          <div className="lg:w-1/2">
+            <div className="block mb-2">
+              <Label htmlFor="event_type">Types of events</Label>
+            </div>
+
+            <select
+              id="event_type"
+              name="typesofevents"
+              className="w-full rounded"
+              value={selectedType}
+              onChange={(e) => setSelectedType(e.target.value)}
+            >
+              {typesofevents.map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+
+        {/*fourth row*/}
+        <div className="flex gap-8">
+          <div className="lg:w-1/2">
+            <div className="block mb-2">
+              <Label htmlFor="file-upload-helper-text">Image of Event</Label>
             </div>
             <TextInput
               id="image_url"
+              name="image_url"
               type="text"
               placeholder="Event image URL"
               required
@@ -86,24 +199,26 @@ function UploadEvents() {
           {/*date*/}
           <div className="lg:w-1/2">
             <div className="block mb-2">
-              <Label htmlFor="name">PDF of Event</Label>
+              <Label htmlFor="pdf_url">PDF of Event</Label>
             </div>
             <TextInput
               id="pdf_url"
+              name="pdf_url"
               type="text"
               placeholder="pdf url of Event"
               required
             />
           </div>
         </div>
+
         {/*description*/}
         <div>
           <div className="block mb-2">
             <Label htmlFor="description"> Description About the Event</Label>
           </div>
           <Textarea
-            id="description"
-            type="text"
+            id="event_description"
+            name="description"
             placeholder="Write your event description..."
             required
             className="w-full"

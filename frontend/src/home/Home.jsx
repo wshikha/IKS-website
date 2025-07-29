@@ -23,7 +23,7 @@ const Home = () => {
     <div>
       <Title />
       <Banner />
-      <div className="h-8 text-white bg-green-600">
+      <div className="h-8 text-white bg-green-600 ">
         <Marquee direction="left" width="100% ">
           <h1 className="text-2xl font-bold">
             Please contact a faculty member from the IKS Centre before applying

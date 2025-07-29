@@ -159,9 +159,9 @@ function Darsanaproduct() {
               <img
                 src={data.img}
                 alt=""
-                className="h-[320px] w-[450px] object-cover rounded-md"
+                className="h-[320px] w-[450px] object-cover rounded-tl-lg"
               />
-              <div className="px-10 py-2 text-white bg-pink-600 ">
+              <div className="px-10 py-2 text-white bg-pink-600 rounded-tl-lg rounded-br-lg">
                 <h3 className="text-xl font-bold ">{data.title}</h3>
               </div>
             </div>
@@ -187,9 +187,9 @@ function Darsanaproduct() {
               <img
                 src={data.img}
                 alt=""
-                className="h-[320px] w-[450px] object-cover rounded-md"
+                className="h-[320px] w-[450px] object-cover rounded-tl-lg"
               />
-              <div className="px-10 py-2 text-white bg-pink-600 ">
+              <div className="px-10 py-2 text-white bg-pink-600 rounded-tl-lg rounded-br-lg">
                 <h3 className="text-xl font-bold ">{data.title}</h3>
               </div>
             </div>
@@ -215,9 +215,9 @@ function Darsanaproduct() {
               <img
                 src={data.img}
                 alt=""
-                className="h-[320px] w-[450px] object-cover rounded-md"
+                className="h-[320px] w-[450px] object-cover rounded-tl-lg"
               />
-              <div className="px-10 py-2 text-white bg-pink-600 ">
+              <div className="px-10 py-2 text-white bg-pink-600 rounded-tl-lg rounded-br-lg">
                 <h3 className="text-xl font-bold ">{data.title}</h3>
               </div>
             </div>

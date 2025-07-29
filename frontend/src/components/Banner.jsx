@@ -10,9 +10,12 @@ function Banner() {
   });
   return (
     <div className="flex items-center bg-amber-600 lg:px-20">
-      <div className="flex flex-col items-center w-full gap-10 py-16 md:flex-row justify between">
+      <div className="flex flex-col items-center w-full gap-10 py-10 md:flex-row justify between">
         {/* left side */}
         <div className="h-full space-y-3 md:w-3/2">
+          <h1 className="font-serif text-5xl font-semibold leading-snug text-center text-white">
+            समग्रविकासार्थं भारतीयज्ञानपरम्परायाः अध्ययनकेन्द्रम्{" "}
+          </h1>
           <h2
             data-aos="fade-up"
             className="px-4 font-serif text-5xl font-semibold leading-snug text-center text-white"

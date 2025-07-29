@@ -36,7 +36,7 @@ function EventsCards({ headline, events }) {
             },
           }}
           modules={[Pagination]}
-          className="w-full h-80 mySwiper"
+          className="w-full h-64 mySwiper"
         >
           {events.map((events) => (
             <SwiperSlide key={events._id}>

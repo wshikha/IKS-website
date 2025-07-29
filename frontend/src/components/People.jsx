@@ -1,16 +1,16 @@
 import React from "react";
-import arnab from "../assets/team/arnab.jpg";
-import sk from "../assets/team/skmisra.jpg";
+import arnab from "../assets/team/arnab.jpeg";
+import sk from "../assets/team/skmisra.jpeg";
 import sd from "../assets/team/sudhanshu.jpeg";
 import skjha from "../assets/team/skjha.jpg";
-import anurag from "../assets/team/anurag.jpg";
+import anurag from "../assets/team/anurag.jpeg";
 import Favimg from "../assets/favimg.jpg";
 import Rajeshr from "../assets/team/Rajeshr.jpg";
 import Sudarshan from "../assets/team/sudarshan.jpeg";
 import lalit from "../assets/team/lalit.jpeg";
 import shivam from "../assets/team/shivam.jpg";
-import kr from "../assets/team/kr.jpg";
-import kunal from "../assets/team/kunal.jpg";
+import kr from "../assets/team/kr2.jpg";
+import kunal from "../assets/team/kunal.jpeg";
 const People = () => {
   return (
     <div>
@@ -232,7 +232,7 @@ const People = () => {
                 <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
                   <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
                     {" "}
-                    SPACE
+                    SPASE
                   </h2>
                   <h1 className="mb-3 font-semibold text-1xl">Kunal Mooley</h1>
                 </div>

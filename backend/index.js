@@ -35,7 +35,7 @@ async function run() {
 
     //create a collection of documents
     const allevents = client.db("iksevents").collection("events");
-    //insert a book to the database using post method
+    //insert a eveny to the database using post method
 
     app.post("/iksevents", async (req, res) => {
       const data = req.body;
@@ -51,20 +51,37 @@ async function run() {
     });
 
     //update a book data : patch or updatre methods
-    app.patch("/events/:id", async (req, res) => {
-      const id = req.params.id;
-      const updateEventsData = req.body;
-      const filter = { _id: new ObjectId(id) };
-      const options = { upsert: true };
 
-      const updateDoc = {
-        $set: {
-          ...updateEventsData,
-        },
-      };
-      //update
-      const result = await allevents.updateOne(filter, updateDoc, options);
-      res.send(result);
+    app.patch("/events/:id", async (req, res) => {
+      const { id } = req.params;
+
+      if (!ObjectId.isValid(id)) {
+        return res.status(400).json({
+          success: false,
+          message: "Invalid event ID.",
+        });
+      }
+
+      try {
+        const updateEventsData = req.body;
+        const filter = { _id: new ObjectId(id) };
+        const options = { upsert: false }; // optional
+        const updateDoc = { $set: { ...updateEventsData } };
+
+        const result = await allevents.updateOne(filter, updateDoc, options);
+
+        res.status(200).json({
+          success: true,
+          message: "Event updated successfully!",
+          result,
+        });
+      } catch (error) {
+        res.status(500).json({
+          success: false,
+          message: "Error updating event",
+          error: error.message,
+        });
+      }
     });
 
     //delete a event data :
@@ -72,6 +89,16 @@ async function run() {
       const id = req.params.id;
       const filter = { _id: new ObjectId(id) };
       const result = await allevents.deleteOne(filter);
+      res.send(result);
+    });
+
+    // find by types of events
+    app.get("/allevents", async (req, res) => {
+      let query = {};
+      if (req.query?.category) {
+        query = { category: req.query.category };
+      }
+      const result = await iksevents.find(query).toArray();
       res.send(result);
     });
 

@@ -41,7 +41,6 @@ const Contactus = () => {
         <p className="text-black">
           Feel free to reach out through contact form or find our contact
           information below. Your feedback, questions, and suggestions are
-          important below. Your feedback, questions, and suggestions are
           important to us as we strive to provide excetional service to our
           university community.
         </p>
@@ -52,7 +51,7 @@ const Contactus = () => {
           </li>
           <li className="text-black">
             <img src={phone_icon} alt="" className="text-black" />
-            +915126797650
+            +91-512-6797650
           </li>
           <li className="text-black">
             {" "}
@@ -84,7 +83,7 @@ const Contactus = () => {
             id=""
             cols="30"
             rows="6"
-            placeholder="enter your message"
+            placeholder="Enter your message"
             required
           ></textarea>
           <button className="px-5 py-2 font-semibold text-white transition-all duration-300 bg-blue-700 hover:bg-black">

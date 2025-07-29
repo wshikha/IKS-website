@@ -9,11 +9,11 @@ const EventDetail = () => {
   }, []);
 
   return (
-    <div data-aos="fade-up" className="p-10">
+    <div data-aos="fade-up" className="pl-10 pr-10">
       <div className="mb-3 text-center">
         <h1
           data-aos="fade-up"
-          className="p-1 text-2xl font-semibold text-white bg-gray-700 lg:px-24 md:text-4xl"
+          className="p-1 text-2xl font-semibold text-white bg-amber-700 lg:px-24 md:text-4xl"
         >
           Recent Events
         </h1>

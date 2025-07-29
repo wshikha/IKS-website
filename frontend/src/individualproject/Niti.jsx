@@ -44,7 +44,7 @@ function Niti() {
                   <img
                     src={image1}
                     alt=""
-                    className="w-[500px] h-[500px] sm:h-[550px] sm:w-[550px] sm:scale-125 object-contain mx-auto pe-52"
+                    className="w-[400px] h-[400px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain mx-auto pe-52"
                   />
                 </div>
               </div>

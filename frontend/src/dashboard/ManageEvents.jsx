@@ -24,8 +24,7 @@ const ManageEvents = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        alert("Event is deleted successfully");
-        setAllEvents(data);
+        alert("Event is deleted successfully!");
       });
   };
 

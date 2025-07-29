@@ -25,6 +25,7 @@ import Darsana from "../individualproject/Darsana";
 import Ganita from "../individualproject/Ganita";
 import Kala from "../individualproject/Kala";
 import Newprojects from "../home/Newprojects";
+import Upcomingevents from "../components/Upcomingevents";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
       {
         path: "/gallery",
         element: <Gallery />,
+      },
+      {
+        path: "/upcomingevents",
+        element: <Upcomingevents />,
       },
       {
         path: "/project/ayurveda",
@@ -118,14 +123,12 @@ const router = createBrowserRouter([
             path: "/admin/dashboard/manage",
             element: <ManageEvents />,
           },
-          {
-            path: "/admin/dashboard/manage",
-            element: <ManageEvents />,
-          },
+
           {
             path: "/admin/dashboard/edit-events/:id",
             element: <EditEvents />,
-            loader: ({ params }) => fetch("/events/${params.id}"),
+            loader: ({ params }) =>
+              fetch(`http://localhost:5000/events/${params.id}`),
           },
         ],
       },

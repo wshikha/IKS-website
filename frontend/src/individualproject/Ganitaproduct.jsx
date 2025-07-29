@@ -127,7 +127,7 @@ function Ganitaproduct() {
                 alt=""
                 className="h-[220px] w-[250px] object-cover rounded-tl-lg"
               />
-              <div className="px-10 py-2 text-white bg-red-700 ">
+              <div className="px-10 py-2 text-white bg-red-700 rounded-tl-lg rounded-br-lg">
                 <h3 className="text-xl font-bold ">{data.title}</h3>
               </div>
             </div>

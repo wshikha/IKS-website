@@ -22,7 +22,8 @@ const About = () => {
               Training: We focus on training human resources rooted in the
               Indian Knowledge System. By equipping individuals with the
               necessary skills and knowledge, we enhance their capacity to
-              contribute effectively to holistic advancement of our .
+              significantly contribute to holistic societal advancement and
+              higher research.
             </li>
             <li>
               Content Development and Outreach: We strive to support researchers
