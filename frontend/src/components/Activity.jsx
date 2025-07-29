@@ -1,5 +1,5 @@
 import React from "react";
-import Favimg from "../assets/Picture1.png";
+
 import Marquee from "react-fast-marquee";
 const Activity = () => {
   return (

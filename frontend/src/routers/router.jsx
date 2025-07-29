@@ -19,11 +19,7 @@ import SubjectList from "../library/SubjectList";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Login from "../components/Login";
 import Logout from "../components/Logout";
-import Ayurveda from "../individualproject/Ayurveda";
-import Niti from "../individualproject/Niti";
-import Darsana from "../individualproject/Darsana";
-import Ganita from "../individualproject/Ganita";
-import Kala from "../individualproject/Kala";
+
 import Newprojects from "../home/Newprojects";
 import Upcomingevents from "../components/Upcomingevents";
 const router = createBrowserRouter([
@@ -74,26 +70,6 @@ const router = createBrowserRouter([
       {
         path: "/upcomingevents",
         element: <Upcomingevents />,
-      },
-      {
-        path: "/project/ayurveda",
-        element: <Ayurveda />,
-      },
-      {
-        path: "/project/niti",
-        element: <Niti />,
-      },
-      {
-        path: "/project/darsana",
-        element: <Darsana />,
-      },
-      {
-        path: "/project/ganita",
-        element: <Ganita />,
-      },
-      {
-        path: "/project/kala",
-        element: <Kala />,
       },
 
       {

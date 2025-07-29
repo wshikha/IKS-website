@@ -1,10 +1,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FaStar } from "react-icons/fa6";
-import { Avatar } from "flowbite-react";
-import proPic from "../assets/prof1.jpg";
-import proPic2 from "../assets/prof2.jpg";
+
 import { Link } from "react-router-dom";
 // Import Swiper styles
 import "swiper/css";

@@ -1,12 +1,6 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import Picture1 from "../assets/projects/Picture1.png";
-import Picture2 from "../assets/projects/Picture2.png";
-import Picture3 from "../assets/projects/Picture3.png";
-import Picture4 from "../assets/projects/Picture4.png";
-import Picture5 from "../assets/projects/Picture5.png";
-import picture6 from "../assets/projects/picture6.jpg";
 
 const Project = () => {
   return (
@@ -52,53 +46,6 @@ const Project = () => {
           vastness of IKS corpus as well as inculcate in them the habit of
           referring to original texts and critically reviewing them.
         </p>
-      </div>
-      <div className="flex flex-col items-center px-10 lg:px-14">
-        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-white bg-amber-600 md:w-full">
-          Research Areas
-        </h2>
-      </div>
-
-      <div className="items-center justify-between px-4 space-y-6 bg-white lg:px-24">
-        <ol>
-          <li>
-            <Link to="/project/ayurveda" className="block mt-12">
-              <p className="my-2 font-serif text-2xl font-semibold text-blue-800">
-                1. आयुर्विज्ञान (āyurvijñāna){" "}
-              </p>
-            </Link>
-          </li>
-          <li>
-            {" "}
-            <Link to="/project/kala" className="block mt-12">
-              <p className="my-2 font-serif text-2xl font-semibold text-blue-800">
-                2. कला (kalā)
-              </p>
-            </Link>
-          </li>
-          <li>
-            <Link to="/project/darsana" className="block mt-12">
-              <p className="my-2 font-serif text-2xl font-semibold text-blue-800">
-                3. दर्शन (Darśana)
-              </p>
-            </Link>
-          </li>
-          <li>
-            <Link to="/project/ganita" className="block mt-12">
-              <p className="my-2 font-serif text-2xl font-semibold text-blue-800">
-                4. गणित (gaṇita)
-              </p>
-            </Link>
-          </li>
-
-          <li>
-            <Link to="/project/niti" className="block mt-12">
-              <p className="my-2 font-serif text-2xl font-semibold text-blue-800">
-                5. नीति (nīti)
-              </p>
-            </Link>
-          </li>
-        </ol>
       </div>
 
       <div className="flex flex-col items-center px-10 lg:px-14 ">
