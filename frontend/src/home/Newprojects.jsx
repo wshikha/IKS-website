@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Favimg from "../assets/niti/img1.jpg";
 
 function Newprojects() {
   const [openPopup, setOpenPopup] = useState(false);

@@ -1,5 +1,5 @@
 import React from "react";
-import Favimg from "../assets/favimg.jpg";
+
 import { Link } from "react-router-dom";
 const Section = () => {
   return (
@@ -9,7 +9,7 @@ const Section = () => {
     >
       <div className="space-y-6 goals-area md:w-1/3">
         <img
-          src={Favimg}
+          src="favimg.jpg"
           alt=""
           className="object-cover px-4 py-5 mx-auto duration-300 rounded-tl-lg rounded-br-lg cursor-pointer shadow-7xl md:m-5 md:h-80"
         />

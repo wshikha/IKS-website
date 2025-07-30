@@ -1,6 +1,5 @@
 import React from "react";
 
-import Favimg from "../assets/niti/img1.jpg";
 import { Link } from "react-router-dom";
 function Upcomingevents() {
   return (
@@ -36,7 +35,7 @@ function Upcomingevents() {
       </div>
       <div className="font-serif md:w-1/2">
         <img
-          src={Favimg}
+          src="img1 copy.jpg"
           alt=""
           className="object-cover px-4 py-5 mx-auto duration-300 rounded-tl-lg rounded-br-lg cursor-pointer shadow-7xl md:m-5 md:h-1/2"
         />

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Favimg from "../assets/banner/banner1.jpg";
+
 import msg_icon from "../assets/msg-icon.png";
 import mail_icon from "../assets/mail-icon.png";
 import phone_icon from "../assets/phone-icon.png";

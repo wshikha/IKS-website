@@ -1,5 +1,4 @@
 import React from "react";
-import vision from "../assets/vision.jpg";
 
 const Vision = () => {
   return (
@@ -19,7 +18,7 @@ const Vision = () => {
           </p>
         </div>
         <div className="px-4 py-8 mx-auto duration-300 border rounded-lg cursor-pointer shadow-7xl md:m-5 md:h-80">
-          <img src={vision} alt="" className="w-96" />
+          <img src="vision.jpg" alt="" className="w-96" />
         </div>
       </div>
     </div>

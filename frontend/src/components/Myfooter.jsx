@@ -7,7 +7,7 @@ import {
   BsYoutube,
 } from "react-icons/bs";
 import { FaDribbble } from "react-icons/fa6";
-import logo from "../assets/iitk-logo.svg";
+
 import { Link } from "react-router-dom";
 const Myfooter = () => {
   return (
@@ -39,7 +39,7 @@ const Myfooter = () => {
             <div>
               <Link to="https://www.iitk.ac.in/" className="block">
                 <img
-                  src={logo}
+                  src="iitk-logo.svg"
                   alt=""
                   className="w-full h-full p-2 bg-white background-cover"
                 />

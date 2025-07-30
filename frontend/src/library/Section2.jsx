@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import book from "../assets/niti/picture9.png";
+
 const Section2 = () => {
   return (
     <div className="px-4 py-10 mt-5 bg-amber-600 lg:px-24">
@@ -24,7 +24,7 @@ const Section2 = () => {
           </Link>
         </div>
         <div>
-          <img src={book} alt="" className="w-96" />
+          <img src="picture9.png" alt="" className="w-96" />
         </div>
       </div>
     </div>

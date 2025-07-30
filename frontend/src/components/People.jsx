@@ -1,16 +1,5 @@
 import React from "react";
-import arnab from "../assets/team/arnab.jpeg";
-import sk from "../assets/team/skmisra.jpeg";
-import sd from "../assets/team/sudhanshu.jpeg";
-import skjha from "../assets/team/skjha.jpg";
-import anurag from "../assets/team/anurag.jpeg";
-import Favimg from "../assets/favimg.jpg";
-import Rajeshr from "../assets/team/Rajeshr.jpg";
-import Sudarshan from "../assets/team/sudarshan.jpeg";
-import lalit from "../assets/team/lalit.jpeg";
-import shivam from "../assets/team/shivam.jpg";
-import kr from "../assets/team/kr2.jpg";
-import kunal from "../assets/team/kunal.jpeg";
+
 const People = () => {
   return (
     <div>
@@ -26,7 +15,7 @@ const People = () => {
               <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
                 <div className="profile-image">
                   <img
-                    src={arnab}
+                    src="team/arnab.jpeg"
                     alt=""
                     className="object-cover object-center w-full pb-0 p-9 lg:h-72 md:h-48"
                   />
@@ -46,7 +35,7 @@ const People = () => {
               <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
                 <div className="profile-image">
                   <img
-                    src={sk}
+                    src="team/skmisra.jpeg"
                     alt=""
                     className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
                   />
@@ -66,7 +55,7 @@ const People = () => {
               <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
                 <div className="profile-image">
                   <img
-                    src={sd}
+                    src="team/sudhanshu.jpeg"
                     alt=""
                     className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
                   />
@@ -86,7 +75,7 @@ const People = () => {
               <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
                 <div className="profile-image">
                   <img
-                    src={anurag}
+                    src="team/anurag.jpeg"
                     alt=""
                     className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
                   />
@@ -106,7 +95,7 @@ const People = () => {
               <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
                 <div className="profile-image">
                   <img
-                    src={skjha}
+                    src="team/skjha.jpg"
                     alt=""
                     className="object-cover object-center w-full pb-0 p-9 lg:h-72 md:h-48"
                   />
@@ -126,7 +115,7 @@ const People = () => {
               <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
                 <div className="profile-image">
                   <img
-                    src={Rajeshr}
+                    src="team/Rajeshr.jpg"
                     alt=""
                     className="object-cover object-center w-full pb-0 p-9 lg:h-72 md:h-48"
                   />
@@ -144,7 +133,7 @@ const People = () => {
               <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
                 <div className="profile-image">
                   <img
-                    src={Sudarshan}
+                    src="team/sudarshan.jpeg"
                     alt=""
                     className="object-cover object-center w-full pb-0 p-9 lg:h-72 md:h-48"
                   />
@@ -164,7 +153,7 @@ const People = () => {
               <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
                 <div className="profile-image">
                   <img
-                    src={lalit}
+                    src="team/lalit.jpeg"
                     alt=""
                     className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
                   />
@@ -184,7 +173,7 @@ const People = () => {
               <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
                 <div className="profile-image">
                   <img
-                    src={shivam}
+                    src="team/shivam.jpg"
                     alt=""
                     className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
                   />
@@ -204,7 +193,7 @@ const People = () => {
               <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
                 <div className="profile-image">
                   <img
-                    src={kr}
+                    src="team/kr2.jpg"
                     alt=""
                     className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
                   />
@@ -224,7 +213,7 @@ const People = () => {
               <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
                 <div className="profile-image">
                   <img
-                    src={kunal}
+                    src="team/kunal.jpeg"
                     alt=""
                     className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
                   />

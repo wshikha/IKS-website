@@ -1,5 +1,5 @@
 import React from "react";
-import BannerCard from "../home/BannerCard";
+
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 function Banner() {
   const [typeEffect] = useTypewriter({

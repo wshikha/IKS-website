@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import googleLogo from "../assets/google-logo.png";
+
 import { AuthContext } from "../context/AuthProvider";
 
 const Login = () => {
@@ -100,7 +100,7 @@ const Login = () => {
               <div className="flex flex-col items-center w-full gap-3 mt-5">
                 <button onClick={handleLogin} className="block">
                   <img
-                    src={googleLogo}
+                    src="google-logo.png"
                     alt=""
                     className="inline-block w-12 h-12"
                   />{" "}
