@@ -3,40 +3,46 @@ import { Link } from "react-router-dom";
 
 function Newprojects() {
   const [openPopup, setOpenPopup] = useState(false);
+
   return (
-    <div
-      data-aos="fade-up"
-      className="items-center justify-between px-10 goals lg:px-24 "
-    >
-      {/* Left: Text Content */}
-      <div className="px-64 text-center text-justify bg-gray-100 rounded-tr-3xl rounded-bl-3xl md:w-fullv-mt-8">
-        <span className="relative flex pt-5 mb-4 ml-40 pl-7 size-3">
-          <span className="absolute inline-flex w-full h-full text-red-800 bg-red-900 rounded-full animate-ping "></span>
-          <span className="relative inline-flex bg-red-600 rounded-full size-3 ">
-            <button className="h-8 p-1 text-red-600 rounded">
-              <b className="font-serif">Upcoming Events</b>
-            </button>
-          </span>
-        </span>
-        <h2 className="font-serif text-3xl font-bold leading-snug text-center text-black md:w-full text-amber-900">
-          SANSKRIT WEEK CELEBRATION <br />
-          Centre for Sanskrit Studies, IITK <br />
-          11 August 2025
-          <br />
-          06.15 Ρ.Μ.- 08.15 P.M.
-          <br />
-          RM 101 (Rajeev Motwani Building)
+    <section data-aos="fade-up" className="px-4 py-8 text-black bg-gray-100">
+      <div className="max-w-5xl mx-auto space-y-4 text-center">
+        {/* Notification Badge */}
+        <div className="flex justify-center">
+          <div className="relative flex items-center justify-center">
+            <span className="absolute inline-flex w-4 h-4 rounded-full opacity-75 bg-amber-600 animate-ping"></span>
+            <span className="relative inline-flex w-4 h-4 rounded-full bg-amber-600"></span>
+          </div>
+        </div>
+
+        {/* Heading */}
+        <h2 className="text-lg font-medium uppercase text-amber-800">
+          Upcoming Event
         </h2>
 
-        <div className="mt-3 text-center">
-          <Link to="/upcomingevents" className="block">
-            <button className="px-10 py-2 mb-10 font-semibold text-white transition-all duration-300 bg-blue-700 rounded-tl-lg rounded-br-lg hover:bg-black">
-              Click Here
-            </button>
-          </Link>
+        {/* Event Details */}
+        <div>
+          <h1 className="text-3xl font-bold md:text-4xl">
+            SANSKRIT WEEK CELEBRATION
+          </h1>
+          <p className="text-lg font-semibold md:text-xl">
+            Centre for Sanskrit Studies, IIT Kanpur
+          </p>
+          <p className="text-base md:text-xl">11 August 2025</p>
+          <p className="text-base md:text-xl">06:15 P.M. – 08:15 P.M.</p>
+          <p className="text-base md:text-xl">
+            Room 101, Rajeev Motwani Building
+          </p>
         </div>
+
+        {/* CTA Button */}
+        <Link to="/upcomingevents">
+          <button className="px-6 py-2 mt-4 text-base font-semibold text-white transition-all duration-300 rounded-md shadow bg-amber-700 hover:bg-amber-800">
+            Click Here to Know More
+          </button>
+        </Link>
       </div>
-    </div>
+    </section>
   );
 }
 

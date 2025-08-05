@@ -1,38 +1,21 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.jpg";
-
-// react icons
-import { FaBarsStaggered, FaBlog, FaXmark } from "react-icons/fa6";
+import { FaBarsStaggered, FaXmark } from "react-icons/fa6";
 import { AuthContext } from "../context/AuthProvider";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
   const { user } = useContext(AuthContext);
 
-  //toggle menu
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
+    const handleScroll = () => setIsSticky(window.scrollY > 100);
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.addEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  //navigation
   const navItems = [
     { link: "Home", path: "/" },
     { link: "About", path: "/about" },
@@ -55,81 +38,63 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed top-0 right-0 w-full text-3xl font-bold transition-all duration-200 ease-in bg-transparent ">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full">
       <nav
-        className={`py-1 lg:px-14 px-4 ${
-          isSticky ? "sticky top-0 left-0 right-0 bg-amber-600" : ""
+        className={`py-2 lg:px-14 px-4 transition-all duration-300 ${
+          isSticky ? "bg-amber-700 shadow-md" : "bg-amber-700"
         }`}
       >
-        <div className="flex items-center justify-between gap-8 p-4 text-base">
-          {/*logo*/}
-          <Link
-            to="/"
-            className="flex items-center gap-4 text-3xl font-bold text-blue-700 cursor-pointer"
-          ></Link>
+        <div className="flex items-center justify-between">
+          {/* Logo + Brand */}
+          <Link to="/" className="flex items-center space-x-3">
+            <img
+              src="logo (2).jpg"
+              alt="Logo"
+              className="object-contain w-12 h-12 p-1 bg-white rounded-full shadow-md"
+            />
+            <span className="text-lg font-semibold tracking-wide text-white">
+              ŚIKṢĀ - IKS IITK
+            </span>
+          </Link>
 
-          {/* nav item for large device*/}
-          <ul className="hidden ml-32 space-x-12 md:flex">
-            {navItems.map(({ link, path, submenu }) => (
-              <li key={path} className="relative group">
+          {/* Desktop nav */}
+          <ul className="hidden space-x-6 md:flex">
+            {navItems.map(({ link, path }) => (
+              <li key={path}>
                 <Link
                   to={path}
-                  className="block text-xl text-black cursor-pointer hover:text-blue-900"
-                  onMouseEnter={() => submenu && setDropdownOpen(true)}
-                  onMouseLeave={() => submenu && setDropdownOpen(false)}
+                  className="text-lg font-medium text-white transition hover:text-yellow-200"
                 >
                   {link}
                 </Link>
-
-                {/* Dropdown */}
-                {submenu && (
-                  <ul className="absolute left-0 z-10 hidden p-2 space-y-2 text-xl bg-white border shadow group-hover:block">
-                    {submenu.map((sub) => (
-                      <Link
-                        key={sub.path}
-                        to={sub.path}
-                        className="block px-4 py-2 text-blue-900 hover:bg-blue-100"
-                      >
-                        {sub.link}
-                      </Link>
-                    ))}
-                  </ul>
-                )}
               </li>
             ))}
           </ul>
 
-          {/*btn for lg devices */}
-          <div className="items-center hidden space-x-12 lg:flex">
-            <button>
-              <FaBarsStaggered className="w-5 cursor-pointer hover:text-blue-700" />
-            </button>
-          </div>
-          {/* menu btn for the mobile devices */}
+          {/* Mobile toggle button */}
           <div className="md:hidden">
-            <button
-              onClick={toggleMenu}
-              className="text-black cursor-pointer focus:outline-none "
-            >
+            <button onClick={toggleMenu} aria-label="Toggle menu">
               {isMenuOpen ? (
-                <FaXmark className="w-5 h-5 text-black" />
+                <FaXmark className="w-5 h-5 text-white" />
               ) : (
-                <FaBarsStaggered className="w-5 h-5 text-black" />
+                <FaBarsStaggered className="w-5 h-5 text-white" />
               )}
             </button>
           </div>
         </div>
-        {/* navitems for sm devices */}
+
+        {/* Mobile nav */}
         <div
-          className={`space-y-4 px-4 mt-16 py-7 bg-blue-700 ${
-            isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
+          className={`md:hidden transition-all duration-300 bg-amber-700 px-4 py-4 absolute top-14 left-0 w-full shadow-md ${
+            isMenuOpen ? "block" : "hidden"
           }`}
         >
           {navItems.map(({ link, path }) => (
             <Link
               key={path}
               to={path}
-              className="block text-base text-white uppercase cursor-pointer"
+              onClick={() => setIsMenuOpen(false)}
+              className="block py-2 text-lg font-medium text-white hover:text-yellow-200"
             >
               {link}
             </Link>

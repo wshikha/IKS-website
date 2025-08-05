@@ -20,10 +20,11 @@ const Library = () => {
         </Marquee>
       </div>
       <PromoBanner />
-
-      <Section2 />
-      <Libraryreview />
       <Container />
+
+      <Libraryreview />
+      <Section2 />
+
       <Subject />
     </div>
   );

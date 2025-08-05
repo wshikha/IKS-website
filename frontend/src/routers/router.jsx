@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../home/Home";
 import Library from "../library/Library";
@@ -13,112 +13,79 @@ import Dashboard from "../dashboard/Dashboard";
 import UploadEvents from "../dashboard/UploadEvents";
 import ManageEvents from "../dashboard/ManageEvents";
 import EditEvents from "../dashboard/EditEvents";
-
 import Gallery from "../components/Gallery";
 import SubjectList from "../library/SubjectList";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import Login from "../components/Login";
 import Logout from "../components/Logout";
-
 import Newprojects from "../home/Newprojects";
 import Upcomingevents from "../components/Upcomingevents";
-const router = createBrowserRouter([
+
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        { path: "/", element: <Home /> },
+        { path: "/about", element: <About /> },
+        { path: "/activity", element: <Activity /> },
+        { path: "/people", element: <People /> },
+        { path: "/project", element: <Project /> },
+        { path: "/subject-list", element: <SubjectList /> },
+        { path: "/library", element: <Library /> },
+        { path: "/contactus", element: <Contactus /> },
+        { path: "/newprojects", element: <Newprojects /> },
+        { path: "/gallery", element: <Gallery /> },
+        { path: "/upcomingevents", element: <Upcomingevents /> },
+
+        {
+          path: "/events/:id",
+          element: <SingleEvent />,
+          loader: ({ params }) =>
+            fetch(`http://localhost:5000/events/${params.id}`),
+        },
+
+        {
+          path: "/admin/dashboard",
+          element: <DashboardLayout />,
+          children: [
+            {
+              path: "/admin/dashboard",
+              element: (
+                <PrivateRoute>
+                  <Dashboard />
+                </PrivateRoute>
+              ),
+            },
+            {
+              path: "/admin/dashboard/upload",
+              element: <UploadEvents />,
+            },
+            {
+              path: "/admin/dashboard/manage",
+              element: <ManageEvents />,
+            },
+            {
+              path: "/admin/dashboard/edit-events/:id",
+              element: <EditEvents />,
+              loader: ({ params }) =>
+                fetch(`http://localhost:5000/events/${params.id}`),
+            },
+          ],
+        },
+      ],
+    },
+    { path: "/login", element: <Login /> },
+    { path: "/logout", element: <Logout /> },
+  ],
   {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/activity",
-        element: <Activity />,
-      },
-      {
-        path: "/people",
-        element: <People />,
-      },
-      {
-        path: "/project",
-        element: <Project />,
-      },
-      {
-        path: "subject-list",
-        element: <SubjectList />,
-      },
-      {
-        path: "/library",
-        element: <Library />,
-      },
-      {
-        path: "/contactus",
-        element: <Contactus />,
-      },
-      {
-        path: "/newprojects",
-        element: <Newprojects />,
-      },
-      {
-        path: "/gallery",
-        element: <Gallery />,
-      },
-      {
-        path: "/upcomingevents",
-        element: <Upcomingevents />,
-      },
-
-      {
-        path: "/events/:id",
-        element: <SingleEvent />,
-        loader: ({ params }) =>
-          fetch(`http://localhost:5000/events/${params.id}`),
-      },
-
-      {
-        path: "/admin/dashboard",
-        element: <DashboardLayout />,
-        children: [
-          {
-            path: "/admin/dashboard",
-            element: (
-              <PrivateRoute>
-                <Dashboard />,
-              </PrivateRoute>
-            ),
-          },
-          {
-            path: "/admin/dashboard/upload",
-            element: <UploadEvents />,
-          },
-          {
-            path: "/admin/dashboard/manage",
-            element: <ManageEvents />,
-          },
-
-          {
-            path: "/admin/dashboard/edit-events/:id",
-            element: <EditEvents />,
-            loader: ({ params }) =>
-              fetch(`http://localhost:5000/events/${params.id}`),
-          },
-        ],
-      },
-    ],
-  },
-
-  {
-    path: "login",
-    element: <Login />,
-  },
-  {
-    path: "logout",
-    element: <Logout />,
-  },
-]);
+    // ✅ Required for hydration to work with useLoaderData
+    future: {
+      v7_startTransition: true,
+    },
+    fallbackElement: <div>Loading...</div>,
+  }
+);
 
 export default router;

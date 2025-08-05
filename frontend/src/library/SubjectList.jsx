@@ -4,11 +4,11 @@ function SubjectList() {
   return (
     <div>
       <div className="flex flex-col items-center my-28 px-15 lg:px-14">
-        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black bg-gradient-to-l from-orange-200 via-orange-50 to-orange-100 to-blue-100 md:w-full">
+        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black text-white bg-amber-600 md:w-full">
           Topics You Can Explore
         </h2>
         <div className="flex items-center gap-2 ">
-          <p className="text-lg px-7">
+          <p className="text-xl px-7">
             Our library offers a rich collection of resources across a wide
             range of subjects to support your curiosity and learning journey.
             Whether you're interested in history, science, literature,

@@ -11,7 +11,7 @@ const PromoBanner = () => {
       <div className="space-y-6 md:w-3/2">
         <h2 className="my-5 text-3xl font-bold leading-snug md:w-3/4">
           {" "}
-          Find Your Favorite <span className="text-blue-700">Book Here!</span>
+          Find Your Favorite <span className="text-amber-800">Book Here!</span>
         </h2>
         <p className="mb-10 text-lg text-justify md:w-5/6">
           With Explainer, you can highlight any text to get an explanation
@@ -37,7 +37,7 @@ const PromoBanner = () => {
           to="http://172.20.170.71:8081/cgi-bin/koha/opac-search.pl?advsearch=1&weight_search=1&do=Search&limit=mc-itype%2Cphr%3ABK&sort_by=relevance"
           className="block mt-12"
         >
-          <button className="px-5 py-2 font-semibold text-white transition-all duration-200 bg-blue-700 rounded hover:bg-black">
+          <button className="px-5 py-2 font-semibold text-white transition-all duration-200 rounded bg-amber-700 hover:bg-black">
             Explore More
           </button>
         </Link>

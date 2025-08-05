@@ -1,234 +1,95 @@
 import React from "react";
 
+const members = [
+  {
+    name: "Arnab Bhattacharya",
+    dept: "Computer Science and Engineering",
+    img: "team/arnab.jpeg",
+  },
+  {
+    name: "Santosh Kumar Misra",
+    dept: "Biological Sciences & Bioengineering",
+    img: "team/skmisra.jpeg",
+  },
+  {
+    name: "Sudhanshu Shekhar Singh",
+    dept: "Materials Science and Engineering",
+    img: "team/sudhanshu.jpeg",
+  },
+  {
+    name: "Anurag Tripathi",
+    dept: "Chemical Engineering",
+    img: "team/anurag.jpeg",
+  },
+  {
+    name: "Shikhar Krishn Jha",
+    dept: "Materials Science and Engineering",
+    img: "team/skjha.jpg",
+  },
+  {
+    name: "Rajesh Ranjan",
+    dept: "Department of Aerospace Engineering",
+    img: "team/Rajeshr.jpg",
+  },
+  {
+    name: "Sudarshan Narayanan",
+    dept: "Sustainable Energy Engineering",
+    img: "team/sudarshan.jpeg",
+  },
+  {
+    name: "Lalit Saraswat",
+    dept: "Humanities and Social Sciences",
+    img: "team/lalit.jpeg",
+  },
+  {
+    name: "Shivam Tripathi",
+    dept: "Civil Engineering",
+    img: "team/shivam.jpg",
+  },
+  {
+    name: "K. R. Guruprasad",
+    dept: "Mechanical Engineering",
+    img: "team/kr2.jpg",
+  },
+  {
+    name: "Kunal Mooley",
+    dept: "SPASE",
+    img: "team/kunal.jpeg",
+  },
+];
+
 const People = () => {
   return (
-    <div>
-      <div className="container px-5 py-24 mx-auto">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="mb-12 font-serif text-center">
-            <h1 className="p-2 text-2xl font-semibold text-white bg-amber-600 lg:px-24 md:text-4xl">
-              Members of ŚIKṢĀ
-            </h1>
+    <div className="px-4 py-16 font-serif bg-amber-50 md:px-10 lg:px-24">
+      <div className="max-w-5xl mx-auto mt-20 text-center">
+        <h2 className="inline-block pb-2 mb-10 text-3xl font-bold border-b-2 md:text-4xl text-amber-800 border-amber-800">
+          Members of ŚIKṢĀ
+        </h2>
+      </div>
+
+      <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        {members.map((member, index) => (
+          <div
+            key={index}
+            className="flex flex-col overflow-hidden transition duration-300 ease-in bg-white border shadow border-amber-200 rounded-xl hover:shadow-md"
+          >
+            <div className="w-full h-80 md:h-96">
+              <img
+                src={member.img}
+                alt={member.name}
+                className="object-cover object-top w-full h-full"
+              />
+            </div>
+            <div className="px-4 py-4 text-center">
+              <h3 className="text-base font-medium text-amber-700 md:text-lg">
+                {member.dept}
+              </h3>
+              <h1 className="mt-1 text-xl font-semibold text-gray-900 md:text-2xl">
+                Prof. {member.name}
+              </h1>
+            </div>
           </div>
-          <div className="flex flex-wrap -m-2">
-            <div className="p-4 s:w-1/2 lg:w-1/4">
-              <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
-                <div className="profile-image">
-                  <img
-                    src="team/arnab.jpeg"
-                    alt=""
-                    className="object-cover object-center w-full pb-0 p-9 lg:h-72 md:h-48"
-                  />
-                </div>
-                <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
-                    {" "}
-                    Computer Science and Engineering
-                  </h2>
-                  <h1 className="mb-3 font-semibold text-1xl">
-                    Arnab Bhattacharya
-                  </h1>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 s:w-1/2 lg:w-1/4">
-              <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
-                <div className="profile-image">
-                  <img
-                    src="team/skmisra.jpeg"
-                    alt=""
-                    className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
-                  />
-                </div>
-                <div className="p-2 m-8 mt-1 transition duration-300 ease-in m-7 hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
-                    {" "}
-                    Biological Sciences & Bioengineering
-                  </h2>
-                  <h1 className="mb-3 font-semibold text-1xl">
-                    Santosh Kumar Misra
-                  </h1>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 s:w-1/2 lg:w-1/4">
-              <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
-                <div className="profile-image">
-                  <img
-                    src="team/sudhanshu.jpeg"
-                    alt=""
-                    className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
-                  />
-                </div>
-                <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
-                    {" "}
-                    Materials Science and Engineering
-                  </h2>
-                  <h1 className="mb-3 font-semibold text-1xl">
-                    Sudhanshu Shekhar Singh
-                  </h1>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 s:w-1/2 lg:w-1/4">
-              <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
-                <div className="profile-image">
-                  <img
-                    src="team/anurag.jpeg"
-                    alt=""
-                    className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
-                  />
-                </div>
-                <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
-                    {" "}
-                    Chemical Engineering
-                  </h2>
-                  <h1 className="mb-3 font-semibold text-1xl">
-                    Anurag Tripathi
-                  </h1>
-                </div>
-              </div>
-            </div>{" "}
-            <div className="p-4 s:w-1/2 lg:w-1/4">
-              <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
-                <div className="profile-image">
-                  <img
-                    src="team/skjha.jpg"
-                    alt=""
-                    className="object-cover object-center w-full pb-0 p-9 lg:h-72 md:h-48"
-                  />
-                </div>
-                <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
-                    {" "}
-                    Materials Science and Engineering
-                  </h2>
-                  <h1 className="mb-3 font-semibold text-1xl">
-                    Shikhar Krishn Jha
-                  </h1>
-                </div>
-              </div>
-            </div>{" "}
-            <div className="p-4 s:w-1/2 lg:w-1/4">
-              <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
-                <div className="profile-image">
-                  <img
-                    src="team/Rajeshr.jpg"
-                    alt=""
-                    className="object-cover object-center w-full pb-0 p-9 lg:h-72 md:h-48"
-                  />
-                </div>
-                <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
-                    {" "}
-                    Department of Aerospace Engineering
-                  </h2>
-                  <h1 className="mb-3 font-semibold text-1xl">Rajesh Ranjan</h1>
-                </div>
-              </div>
-            </div>{" "}
-            <div className="p-4 s:w-1/2 lg:w-1/4">
-              <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
-                <div className="profile-image">
-                  <img
-                    src="team/sudarshan.jpeg"
-                    alt=""
-                    className="object-cover object-center w-full pb-0 p-9 lg:h-72 md:h-48"
-                  />
-                </div>
-                <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
-                    {" "}
-                    Sustainable Energy Engineering
-                  </h2>
-                  <h1 className="mb-3 font-semibold text-1xl">
-                    Sudarshan Narayanan
-                  </h1>
-                </div>
-              </div>
-            </div>{" "}
-            <div className="p-4 s:w-1/2 lg:w-1/4">
-              <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
-                <div className="profile-image">
-                  <img
-                    src="team/lalit.jpeg"
-                    alt=""
-                    className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
-                  />
-                </div>
-                <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
-                    {" "}
-                    Humanities and Social Sciences
-                  </h2>
-                  <h1 className="mb-3 font-semibold text-1xl">
-                    Lalit Saraswat
-                  </h1>
-                </div>
-              </div>
-            </div>{" "}
-            <div className="p-4 s:w-1/2 lg:w-1/4">
-              <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
-                <div className="profile-image">
-                  <img
-                    src="team/shivam.jpg"
-                    alt=""
-                    className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
-                  />
-                </div>
-                <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
-                    {" "}
-                    Civil Engineering
-                  </h2>
-                  <h1 className="mb-3 font-semibold text-1xl">
-                    Shivam Tripathi
-                  </h1>
-                </div>
-              </div>
-            </div>{" "}
-            <div className="p-4 s:w-1/2 lg:w-1/4">
-              <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
-                <div className="profile-image">
-                  <img
-                    src="team/kr2.jpg"
-                    alt=""
-                    className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
-                  />
-                </div>
-                <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
-                    {" "}
-                    Mechanical Engineering
-                  </h2>
-                  <h1 className="mb-3 font-semibold text-1xl">
-                    K. R. Guruprasad
-                  </h1>
-                </div>
-              </div>
-            </div>{" "}
-            <div className="p-4 s:w-1/2 lg:w-1/4">
-              <div className="overflow-hidden border-2 border-gray-200 rounded-lg h-96 border-opacity-60">
-                <div className="profile-image">
-                  <img
-                    src="team/kunal.jpeg"
-                    alt=""
-                    className="object-cover object-top w-full pb-0 p-9 lg:h-72 md:h-48"
-                  />
-                </div>
-                <div className="p-2 m-8 mt-1 transition duration-300 ease-in hover:bg-indigo-700 hover:text-white">
-                  <h2 className="mb-1 text-base font-medium text-indigo-800 hover:text-white">
-                    {" "}
-                    SPASE
-                  </h2>
-                  <h1 className="mb-3 font-semibold text-1xl">Kunal Mooley</h1>
-                </div>
-              </div>
-            </div>{" "}
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

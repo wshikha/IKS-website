@@ -1,38 +1,38 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
+
 const Section = () => {
   return (
-    <div
+    <section
       data-aos="fade-up"
-      className="flex items-center justify-between gap-12 px-4 my-8 goals lg:px-24 fex-col md:flex-row"
+      className="px-4 py-16 font-serif text-black bg-gray-100 lg:px-24"
     >
-      <div className="space-y-6 goals-area md:w-1/3">
-        <img
-          src="favimg.jpg"
-          alt=""
-          className="object-cover px-4 py-5 mx-auto duration-300 rounded-tl-lg rounded-br-lg cursor-pointer shadow-7xl md:m-5 md:h-80"
-        />
-      </div>
-      <div className="font-serif md:w-1/2">
-        <h2 className="my-2 text-3xl font-bold leading-snug text-center text-black md:w-4/5">
+      <div className="max-w-5xl mx-auto space-y-8 text-center ">
+        {/* Heading */}
+        <h2 className="inline-block pb-2 text-3xl font-bold border-b-2 md:text-4xl text-amber-800 border-amber-800">
           Our Focus
         </h2>
-        <p className="text-xl text-justify mb-7">
-          Our Focus At ŚIKṢĀ, our activities center around the innovative
-          application of Science and Technology to facilitate Holistic
-          Advancement. We draw inspiration from the traditional and sustainable
+
+        {/* Content */}
+        <p className="text-lg leading-relaxed text-justify text-gray-800 md:text-xl">
+          At <strong>ŚIKṢĀ</strong>, our activities center around the innovative
+          application of science and technology to facilitate holistic
+          advancement. We draw inspiration from the traditional and sustainable
           methods of ancient India, adapting these practices to modern contexts
-          in collaboration with various stakeholders including technologists,
-          scientists, entrepreneurs, and professional researchers.
+          in collaboration with technologists, scientists, entrepreneurs, and
+          professional researchers.
         </p>
-        <Link to="/about" className="block">
-          <button className="px-5 py-2 font-semibold text-white transition-all duration-300 bg-blue-900 rounded hover:bg-black">
-            Explore More
-          </button>
-        </Link>
+
+        {/* CTA Button */}
+        <div>
+          <Link to="/about">
+            <button className="px-6 py-3 font-semibold text-white transition duration-300 rounded-lg shadow bg-amber-700 hover:bg-amber-800">
+              Explore More
+            </button>
+          </Link>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

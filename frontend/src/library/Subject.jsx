@@ -5,43 +5,50 @@ import msg_icon from "../assets/msg-icon.png";
 import mail_icon from "../assets/mail-icon.png";
 import phone_icon from "../assets/phone-icon.png";
 import location_icon from "../assets/location-icon.png";
-import SubjectList from "./SubjectList";
+
 const Subject = () => {
   return (
-    <div className="flex items-center bg-amber-600 mb-14">
-      <div className="flex flex-col items-center w-full py-10 md:flex-row justify between">
-        <div className="text-lg contact-col lg:px-32">
-          <h3 className="text-xl font-bold color-black">
-            Send us a message <img src={msg_icon} alt=" " />
+    <section className="px-6 py-12 font-serif bg-gray-100 lg:px-24">
+      <div className="flex flex-col gap-12 mx-auto max-w-7xl md:flex-row md:items-start md:justify-between">
+        {/* Contact Info */}
+        <div className="space-y-6 md:w-1/2">
+          <h3 className="flex items-center gap-3 text-3xl font-bold text-amber-800">
+            Send us a message
+            <img src={msg_icon} alt="Message Icon" className="w-10 h-10" />
           </h3>
-          <p className="justify-center text-black">
-            Feel free to reach out through contact form or find our contact
-            information below. Your feedback, questions, and suggestions are
-            important below. Your feedback, questions, and suggestions are
-            important to us as we strive to provide excetional service to our
-            university community.
+          <p className="text-xl text-black ">
+            Feel free to reach out to us for any queries or feedback.
           </p>
-          <ul className="text-black">
-            <li>
-              <img src={mail_icon} alt="" />
-              iks_library@iitk.ac.in
+          <ul className="space-y-3 text-xl text-black">
+            <li className="flex items-center gap-2">
+              <img src={mail_icon} alt="Email Icon" className="w-9 h-9" />
+              <span>iks_library@iitk.ac.in</span>
             </li>
-            <li>
-              <img src={phone_icon} alt="" />
-              +915126797650
+            <li className="flex items-center gap-2 text-xl">
+              <img src={phone_icon} alt="Phone Icon" className="w-9 h-9" />
+              <span>+91-512-6797650</span>
             </li>
-            <li>
-              {" "}
-              <img src={location_icon} alt="" />
-              Indian Institute of Technology Kalyanpur Kanpur-208016 INDIA
+            <li className="flex items-start gap-2">
+              <img
+                src={location_icon}
+                alt="Location Icon"
+                className="mt-1 w-7 h-7"
+              />
+              <span>
+                RM 608, Rajeev Motwani Building, <br />
+                Indian Institute of Technology Kanpur, <br />
+                Kalyanpur, Kanpur – 208016, U.P. (INDIA)
+              </span>
             </li>
           </ul>
         </div>
-        <div className="w-1/2">
-          <h2 className="mb-3 text-3xl font-bold leading-snug">
+
+        {/* Library Info */}
+        <div className="space-y-6 md:w-1/2">
+          <h2 className="text-4xl font-bold text-amber-800">
             शिक्षा-ग्रन्थालय
           </h2>
-          <p className="text-lg text-justify">
+          <p className="text-xl leading-relaxed text-justify text-black">
             We are honoured to announce the opening of a new haven for scholars
             and seekers of knowledge – a specialised library established by
             ŚIKṢĀ: Study Centre for Indian Knowledge Systems at IIT Kanpur. This
@@ -49,14 +56,9 @@ const Subject = () => {
             facilitate, and benefit from IKS-related studies, research, content
             development, and outreach.
           </p>
-          <Link to="/subject-list" className="block mt-12">
-            <button className="px-5 py-2 font-semibold text-white transition-all duration-200 bg-blue-700 rounded hover:bg-black">
-              Subject List
-            </button>
-          </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

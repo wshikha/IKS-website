@@ -20,19 +20,11 @@ import lgRotate from "lightgallery/plugins/rotate";
 const images = [
   { src: "/img1.jpg", alt: "Talk on Anhijnana Sakuntalam" },
   { src: "/img2.jpg", alt: "Talk on Anhijnana Sakuntalam" },
-  { src: "/img3.jpg", alt: "Talk on Anhijnana Sakuntalam" },
-  { src: "/img4.jpg", alt: "Talk on Anhijnana Sakuntalam" },
-  { src: "/img5.jpg", alt: "Talk on Anhijnana Sakuntalam" },
-  { src: "/img6.jpg", alt: "Talk on Indian Philosophy" },
+
   { src: "/img7.jpg", alt: "Talk on Indian Philosophy" },
-  { src: "/img8.jpg", alt: "Talk on Indian Philosophy" },
-  { src: "/img9.jpg", alt: "Talk on Indian Philosophy" },
-  { src: "/img10.jpg", alt: "Talk on Indian Philosophy" },
-  { src: "/img11.jpeg", alt: "IKS Award Ceremony" },
-  { src: "/img12.jpeg", alt: "Teaching Calculus as Ganita" },
+
   { src: "/img13.jpg", alt: "Teaching Calculus as Ganita" },
-  { src: "/img14.jpg", alt: "Teaching Calculus as Ganita" },
-  { src: "/img15.jpg", alt: "Teaching Calculus as Ganita" },
+
   { src: "/img16.jpg", alt: "Teaching Calculus as Ganita" },
   { src: "/img17.jpg", alt: "Teaching Calculus as Ganita" },
   { src: "/img18.jpeg", alt: "Teaching Calculus as Ganita" },
@@ -61,10 +53,11 @@ function Gallery() {
     console.log("lightGallery has been initialized");
   };
   return (
-    <div>
-      <div className="flex flex-col items-center px-10 my-20 font-serif lg:px-14 ">
-        <h2 className="my-10 text-4xl font-semibold leading-snug text-center text-black text-white bg-amber-600 md:w-full">
-          Images
+    <section className="px-4 py-12 font-serif text-black bg-amber-50 md:px-10 lg:px-24">
+      <div className="max-w-5xl pb-10 mx-auto mt-24 space-y-10">
+        {/* Heading */}
+        <h2 className="inline-block pb-2 mx-auto text-3xl font-bold border-b-2 md:text-4xl text-amber-800 border-amber-800">
+          Gallery
         </h2>
       </div>
       <div className="App">
@@ -89,7 +82,7 @@ function Gallery() {
           })}
         </LightGallery>
       </div>
-    </div>
+    </section>
   );
 }
 export default Gallery;

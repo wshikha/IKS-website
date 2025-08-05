@@ -2,26 +2,52 @@ import React from "react";
 
 const Vision = () => {
   return (
-    <div data-aos="fade-up" className="bg-amber-600 vision-area lg:px-24">
-      <div className="flex flex-col items-center justify-between gap-12 md:flex-row">
-        <div className="font-serif md:w-1/2">
-          <h2 className="mb-4 text-3xl font-bold leading-snug ">Vision</h2>
-          <p className="text-xl text-justify ">
-            The vision of the Centre is to establish IITK at the forefront of
-            IKS studies in the world. In his speech, Prof. Karandikar mentioned
-            that the centre's goal is to start an academic program in IKS and
-            create a significant impact in the field. The centre will conduct
-            research in various domains, including Health & Wellness,
-            Mathematics & Astronomy, Sanskrit & Linguistic studies,
-            Consciousness studies, Archaeo-metallurgy & Materials, Darsanas,
-            Acoustics & Music, and Water management systems.
-          </p>
-        </div>
-        <div className="px-4 py-8 mx-auto duration-300 border rounded-lg cursor-pointer shadow-7xl md:m-5 md:h-80">
-          <img src="vision.jpg" alt="" className="w-96" />
-        </div>
+    <section
+      data-aos="fade-up"
+      className="px-4 py-12 font-serif text-black bg-amber-50 md:px-10 lg:px-24"
+    >
+      <div className="max-w-5xl mx-auto space-y-6 text-center">
+        {/* Heading */}
+        <h2 className="inline-block pb-2 text-3xl font-bold border-b-2 md:text-4xl text-amber-800 border-amber-800">
+          Vision
+        </h2>
+
+        {/* Paragraph */}
+        <p className="text-lg leading-relaxed text-justify md:text-xl">
+          To establish <strong>IIT Kanpur</strong> as a global leader in{" "}
+          <strong>Bhāratīya-Jñānaparamparā</strong> (Indian Knowledge System)
+          studies—revitalizing, integrating, and disseminating the profound
+          wisdom of Bhārata.
+          <br />
+          <br />
+          <strong>ŚIKṢĀ</strong> aspires to foster interdisciplinary excellence
+          by drawing from timeless disciplines:
+        </p>
+
+        {/* List of Disciplines */}
+        <ul className="text-lg leading-loose text-left text-gray-800 list-disc list-inside md:text-xl">
+          <li>
+            <strong>Ārogya</strong> (Health & Wellness)
+          </li>
+          <li>
+            <strong>Gaṇita-Jyotiṣa</strong> (Mathematics & Astronomy)
+          </li>
+          <li>
+            <strong>Saṃskṛta-Bhāṣāśāstra</strong> (Sanskrit & Linguistics)
+          </li>
+          <li>
+            <strong>Purātan-Dhātuśāstra & Dravyavijñāna</strong>{" "}
+            (Archaeo-metallurgy & Materials)
+          </li>
+          <li>
+            <strong>Dhvani-vijñāna & Saṃgīta</strong> (Acoustics & Music)
+          </li>
+          <li>
+            <strong>Darśana</strong> (Philosophy)
+          </li>
+        </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

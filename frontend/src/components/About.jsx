@@ -2,79 +2,85 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container px-5 py-24 mx-auto mt-12">
-      <div className="mb-12 font-serif text-center">
-        <h1 className="p-2 font-serif text-2xl font-semibold text-white bg-amber-600 lg:px-24 md:text-4xl">
-          Our Goals
-        </h1>
-      </div>
-      <div className="bg-amber-600">
-        <div className="flex items-center justify-between gap-16 px-2 my-10 space-y-6 bg-white lg:px-24 fex-col md:flex-row ">
-          <p className="pb-12 mb-10 font-serif text-lg text-justify ">
-            We are committed to achieve several key objectives:
-            <li>
-              Research: We aim to define the state of the art in traditional
-              Indian Knowledge System activities through the integration of
-              science and technology. This involves exploring new methodologies
-              and technologies that can enhance heritage conservation efforts.
-            </li>
-            <li>
-              Training: We focus on training human resources rooted in the
-              Indian Knowledge System. By equipping individuals with the
-              necessary skills and knowledge, we enhance their capacity to
-              significantly contribute to holistic societal advancement and
-              higher research.
-            </li>
-            <li>
-              Content Development and Outreach: We strive to support researchers
-              by developing pedagogically relevant resource materials rooted in
-              the Indian tradition and primary references available in Sanskrit
-              that enables researchers to create a perfect समन्वय between
-              science and technology and scale up their operations and serve
-              their customers more effectively. This includes creating tools and
-              resources that facilitate better engagement with heritage assets.
-            </li>
-            Through these initiatives, ŚIKṢĀ seeks to create a sustainable
-            framework for the preservation and promotion of India's rich
-            Scientific, Philosophical, Cultural and Literary heritage, ensuring
-            that it continues to thrive for future generations.
+    <div className="px-5 py-20 mt-12 font-serif bg-amber-50">
+      {/* Our Goals Section */}
+      <section
+        data-aos="fade-up"
+        className="px-4 py-12 font-serif text-black bg-amber-50 md:px-10 lg:px-24"
+      >
+        <div className="max-w-5xl mx-auto space-y-6 text-center">
+          {/* Heading */}
+          <h2 className="inline-block pb-2 text-3xl font-bold border-b-2 md:text-4xl text-amber-800 border-amber-800">
+            Our Goals
+          </h2>
+        </div>
+
+        <div className="px-4 py-10 mx-auto mt-10 bg-white rounded-lg shadow-md md:px-16 lg:px-24">
+          <p className="text-lg leading-relaxed text-justify text-gray-800">
+            We are committed to achieving several key objectives:
+            <ul className="pl-5 mt-4 space-y-2 list-disc">
+              <li>
+                <b>Research:</b> Defining the state of the art in Indian
+                Knowledge System through integration of science and technology.
+                This includes exploring modern methodologies to enhance heritage
+                conservation.
+              </li>
+              <li>
+                <b>Training:</b> Developing human resources rooted in the Indian
+                Knowledge System to empower individuals to contribute to
+                holistic societal advancement and research.
+              </li>
+              <li>
+                <b>Content Development & Outreach:</b> Supporting researchers by
+                creating pedagogically relevant materials from Indian traditions
+                and Sanskrit sources. These resources enable effective
+                integration with science, technology, and outreach.
+              </li>
+            </ul>
+            <br />
+            Through these goals, ŚIKṢĀ strives to build a sustainable framework
+            that preserves and promotes India’s scientific, philosophical,
+            cultural, and literary heritage for future generations.
           </p>
         </div>
-      </div>
-      <div className="mb-12 font-serif text-center">
-        <h2 className="py-2 font-serif font-semibold text-white bg-amber-600 lg:px-14 md:text-4xl ">
-          About ŚIKṢĀ: Centre for IKS
-        </h2>{" "}
-      </div>
+      </section>
 
-      <div className="flex items-center justify-between gap-16 my-10 space-y-6 bg-white lg:px-24 fex-col md:flex-row ">
-        <p className="py-10 mb-20 font-serif text-lg text-justify ">
-          ŚIKṢĀ: Study Centre for Indian Knowledge System for Holistic
-          Advancement at IIT Kanpur is dedicated to explore and revitalize
-          India's rich heritage through the lens of traditional knowledge
-          systems. Our focus encompasses major themes such as Bhāratīya Bhāṣā
-          (Indian Languages), Gaṇita (Mathematics), Darśana (Philosophy), Nīti
-          (Ethics), Kalā (Art), and Āyurveda (Traditional Medicine). These
-          themes are essential for fostering a comprehensive understanding of
-          Indian culture and its relevance in contemporary society. We aim to
-          develop reference materials that draw from primary Sanskrit texts,
-          enabling easy integration into various initiatives at IIT Kanpur. This
-          integration supports a wide range of projects, from interdisciplinary
-          research to community engagement efforts, ensuring that the insights
-          from Indian Knowledge Systems can be applied effectively across
-          different fields. In collaboration with mentors, participants will
-          systematically review original texts related to their assigned themes,
-          leading to a curated list of references that highlight significant
-          concepts. This initiative not only promotes the preservation of
-          traditional knowledge but also encourages innovative applications in
-          modern contexts. By harnessing the depth of IKS, ŚIKṢĀ seeks to
-          contribute to the holistic advancement of society, fostering
-          creativity, critical thinking, and ethical reasoning among researchers
-          and practitioners alike. Our goal is to bridge the gap between ancient
-          wisdom and contemporary challenges, ensuring that India's cultural
-          heritage continues to inform and inspire future generations.
-        </p>
-      </div>
+      {/* About Section */}
+      <section
+        data-aos="fade-up"
+        className="px-4 py-12 font-serif text-black bg-amber-50 md:px-10 lg:px-24"
+      >
+        <div className="max-w-5xl mx-auto space-y-6 text-center">
+          {/* Heading */}
+          <h2 className="inline-block pb-2 text-3xl font-bold border-b-2 md:text-4xl text-amber-800 border-amber-800">
+            About ŚIKṢĀ: Centre for IKS
+          </h2>
+        </div>
+
+        <div className="px-4 py-10 mx-auto mt-10 bg-white rounded-lg shadow-md md:px-16 lg:px-24">
+          <p className="text-lg leading-relaxed text-justify text-gray-800">
+            ŚIKṢĀ: Study Centre for Indian Knowledge System for Holistic
+            Advancement at IIT Kanpur is dedicated to exploring and revitalizing
+            India's rich heritage through traditional knowledge systems. Our
+            primary focus spans Bhāratīya Bhāṣā (Indian Languages), Gaṇita
+            (Mathematics), Darśana (Philosophy), Nīti (Ethics), Kalā (Art), and
+            Āyurveda (Traditional Medicine).
+            <br />
+            <br />
+            By developing reference materials rooted in primary Sanskrit texts,
+            we aim to integrate these themes into diverse research and outreach
+            initiatives at IIT Kanpur. Collaborating with mentors, participants
+            engage with original texts to curate significant references that
+            bridge ancient knowledge with modern applications.
+            <br />
+            <br />
+            ŚIKṢĀ aspires to inspire creativity, critical thinking, and ethical
+            reasoning. Our ultimate mission is to connect India's timeless
+            wisdom with contemporary challenges, ensuring its enduring relevance
+            and impact on future generations.
+          </p>
+        </div>
+      </section>
     </div>
   );
 };
