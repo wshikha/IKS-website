@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Myfooter from "./components/Myfooter";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Banner from "./components/Banner";
 const App = () => {
   React.useEffect(() => {
     AOS.init({
@@ -20,6 +21,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <Banner />
       <div className="min-h-screen">
         <Outlet />
       </div>
